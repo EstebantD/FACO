@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInicio));
-            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCarrito2 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.Btn_Salir = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCarrito1 = new System.Windows.Forms.Button();
+            this.Imagen_producto1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -47,7 +48,7 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Añadir1 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -60,132 +61,164 @@
             this.button16 = new System.Windows.Forms.Button();
             this.Pnl_Pagina1 = new System.Windows.Forms.Panel();
             this.Pnl_Pagina2 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.button22 = new System.Windows.Forms.Button();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.button24 = new System.Windows.Forms.Button();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.button25 = new System.Windows.Forms.Button();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.button26 = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.button27 = new System.Windows.Forms.Button();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.button28 = new System.Windows.Forms.Button();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.button29 = new System.Windows.Forms.Button();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Pnl_Pagina3 = new System.Windows.Forms.Panel();
+            this.Pnl_Pagina4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Celda5 = new System.Windows.Forms.Panel();
+            this.lbl_Estado5 = new System.Windows.Forms.Label();
+            this.button46 = new System.Windows.Forms.Button();
+            this.Btn_Comprar = new System.Windows.Forms.Button();
+            this.ProductoN5 = new System.Windows.Forms.Label();
+            this.PrecioProducto5 = new System.Windows.Forms.Label();
+            this.ImagenProducto5 = new System.Windows.Forms.PictureBox();
+            this.Celda4 = new System.Windows.Forms.Panel();
+            this.lbl_Estado4 = new System.Windows.Forms.Label();
+            this.button45 = new System.Windows.Forms.Button();
+            this.ProductoN4 = new System.Windows.Forms.Label();
+            this.PrecioProducto4 = new System.Windows.Forms.Label();
+            this.ImagenProducto4 = new System.Windows.Forms.PictureBox();
+            this.Celda3 = new System.Windows.Forms.Panel();
+            this.lbl_Estado3 = new System.Windows.Forms.Label();
+            this.button44 = new System.Windows.Forms.Button();
+            this.ProductoN3 = new System.Windows.Forms.Label();
+            this.PrecioProducto3 = new System.Windows.Forms.Label();
+            this.ImagenProducto3 = new System.Windows.Forms.PictureBox();
+            this.Celda2 = new System.Windows.Forms.Panel();
+            this.lbl_Estado2 = new System.Windows.Forms.Label();
+            this.button37 = new System.Windows.Forms.Button();
+            this.ProductoN2 = new System.Windows.Forms.Label();
+            this.PrecioProducto2 = new System.Windows.Forms.Label();
+            this.ImagenProducto2 = new System.Windows.Forms.PictureBox();
+            this.Celda1 = new System.Windows.Forms.Panel();
+            this.lbl_Estado1 = new System.Windows.Forms.Label();
+            this.button36 = new System.Windows.Forms.Button();
+            this.ProductoN1 = new System.Windows.Forms.Label();
+            this.PrecioProducto1 = new System.Windows.Forms.Label();
+            this.ImagenProducto = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto30 = new System.Windows.Forms.Label();
+            this.Precio_producto30 = new System.Windows.Forms.Label();
+            this.Btn_Añadir30 = new System.Windows.Forms.Button();
+            this.Imagen_producto30 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto29 = new System.Windows.Forms.Label();
+            this.Precio_producto29 = new System.Windows.Forms.Label();
+            this.Btn_Añadir29 = new System.Windows.Forms.Button();
+            this.Imagen_producto29 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto28 = new System.Windows.Forms.Label();
+            this.Precio_producto28 = new System.Windows.Forms.Label();
+            this.Btn_Añadir28 = new System.Windows.Forms.Button();
+            this.Nombre_producto27 = new System.Windows.Forms.Label();
+            this.Precio_producto27 = new System.Windows.Forms.Label();
+            this.Btn_Añadir27 = new System.Windows.Forms.Button();
+            this.Nombre_producto26 = new System.Windows.Forms.Label();
+            this.Precio_producto26 = new System.Windows.Forms.Label();
+            this.Btn_Añadir26 = new System.Windows.Forms.Button();
+            this.Nombre_producto25 = new System.Windows.Forms.Label();
+            this.Precio_producto25 = new System.Windows.Forms.Label();
+            this.Imagen_producto28 = new System.Windows.Forms.PictureBox();
+            this.Imagen_producto27 = new System.Windows.Forms.PictureBox();
+            this.Imagen_producto26 = new System.Windows.Forms.PictureBox();
+            this.Btn_Añadir25 = new System.Windows.Forms.Button();
+            this.Imagen_producto25 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto24 = new System.Windows.Forms.Label();
+            this.Precio_producto24 = new System.Windows.Forms.Label();
+            this.Btn_Añadir24 = new System.Windows.Forms.Button();
+            this.Imagen_producto24 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto23 = new System.Windows.Forms.Label();
+            this.Precio_producto23 = new System.Windows.Forms.Label();
+            this.Btn_Añadir23 = new System.Windows.Forms.Button();
+            this.Imagen_producto23 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto22 = new System.Windows.Forms.Label();
+            this.Precio_producto22 = new System.Windows.Forms.Label();
+            this.Btn_Añadir22 = new System.Windows.Forms.Button();
+            this.Imagen_producto22 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto21 = new System.Windows.Forms.Label();
+            this.Precio_producto21 = new System.Windows.Forms.Label();
+            this.Btn_Añadir21 = new System.Windows.Forms.Button();
+            this.Imagen_producto21 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto20 = new System.Windows.Forms.Label();
+            this.Precio_producto20 = new System.Windows.Forms.Label();
+            this.Btn_Añadir20 = new System.Windows.Forms.Button();
+            this.Nombre_producto19 = new System.Windows.Forms.Label();
+            this.Precio_producto19 = new System.Windows.Forms.Label();
+            this.Btn_Añadir19 = new System.Windows.Forms.Button();
+            this.Nombre_producto18 = new System.Windows.Forms.Label();
+            this.Precio_producto18 = new System.Windows.Forms.Label();
+            this.Btn_Añadir18 = new System.Windows.Forms.Button();
+            this.Nombre_producto17 = new System.Windows.Forms.Label();
+            this.Precio_producto17 = new System.Windows.Forms.Label();
+            this.Imagen_producto20 = new System.Windows.Forms.PictureBox();
+            this.Imagen_producto19 = new System.Windows.Forms.PictureBox();
+            this.Imagen_producto18 = new System.Windows.Forms.PictureBox();
+            this.Btn_Añadir17 = new System.Windows.Forms.Button();
+            this.Imagen_producto17 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto16 = new System.Windows.Forms.Label();
+            this.Precio_producto16 = new System.Windows.Forms.Label();
+            this.Btn_Añadir16 = new System.Windows.Forms.Button();
+            this.Imagen_producto16 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto15 = new System.Windows.Forms.Label();
+            this.Precio_producto15 = new System.Windows.Forms.Label();
+            this.Btn_Añadir15 = new System.Windows.Forms.Button();
+            this.Imagen_producto15 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto14 = new System.Windows.Forms.Label();
+            this.Precio_producto14 = new System.Windows.Forms.Label();
+            this.Btn_Añadir14 = new System.Windows.Forms.Button();
+            this.Imagen_producto14 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto13 = new System.Windows.Forms.Label();
+            this.Precio_producto13 = new System.Windows.Forms.Label();
+            this.Btn_Añadir13 = new System.Windows.Forms.Button();
+            this.Imagen_producto13 = new System.Windows.Forms.PictureBox();
+            this.Nombre_producto12 = new System.Windows.Forms.Label();
+            this.Precio_producto12 = new System.Windows.Forms.Label();
+            this.Btn_Añadir12 = new System.Windows.Forms.Button();
+            this.Nombre_producto11 = new System.Windows.Forms.Label();
+            this.Precio_producto11 = new System.Windows.Forms.Label();
+            this.Btn_Añadir11 = new System.Windows.Forms.Button();
+            this.Nombre_producto10 = new System.Windows.Forms.Label();
+            this.Precio_producto10 = new System.Windows.Forms.Label();
+            this.Btn_Añadir10 = new System.Windows.Forms.Button();
+            this.Nombre_producto9 = new System.Windows.Forms.Label();
+            this.Precio_producto9 = new System.Windows.Forms.Label();
+            this.Imagen_producto12 = new System.Windows.Forms.PictureBox();
+            this.Imagen_producto11 = new System.Windows.Forms.PictureBox();
+            this.Imagen_producto10 = new System.Windows.Forms.PictureBox();
+            this.Btn_Añadir9 = new System.Windows.Forms.Button();
+            this.Imagen_producto9 = new System.Windows.Forms.PictureBox();
+            this.N_Producto8 = new System.Windows.Forms.Label();
+            this.Precio_Producto8 = new System.Windows.Forms.Label();
+            this.Btn_Añadir8 = new System.Windows.Forms.Button();
+            this.Imagen_producto8 = new System.Windows.Forms.PictureBox();
+            this.N_Producto7 = new System.Windows.Forms.Label();
+            this.Precio_Producto7 = new System.Windows.Forms.Label();
+            this.Btn_Añadir7 = new System.Windows.Forms.Button();
+            this.Imagen_producto7 = new System.Windows.Forms.PictureBox();
+            this.N_Producto6 = new System.Windows.Forms.Label();
+            this.Precio_Producto6 = new System.Windows.Forms.Label();
+            this.Btn_Añadir6 = new System.Windows.Forms.Button();
+            this.Imagen_producto6 = new System.Windows.Forms.PictureBox();
+            this.N_Producto5 = new System.Windows.Forms.Label();
+            this.Precio_Producto5 = new System.Windows.Forms.Label();
+            this.Btn_Añadir5 = new System.Windows.Forms.Button();
+            this.Imagen_producto5 = new System.Windows.Forms.PictureBox();
+            this.N_Producto4 = new System.Windows.Forms.Label();
+            this.Precio_Producto4 = new System.Windows.Forms.Label();
+            this.Btn_Añadir4 = new System.Windows.Forms.Button();
+            this.N_Producto3 = new System.Windows.Forms.Label();
+            this.Precio_Producto3 = new System.Windows.Forms.Label();
+            this.Btn_Añadir3 = new System.Windows.Forms.Button();
+            this.N_Producto2 = new System.Windows.Forms.Label();
+            this.Precio_Producto2 = new System.Windows.Forms.Label();
+            this.Btn_Añadir2 = new System.Windows.Forms.Button();
+            this.N_Producto1 = new System.Windows.Forms.Label();
+            this.Precio_Producto1 = new System.Windows.Forms.Label();
+            this.Imagen_producto4 = new System.Windows.Forms.PictureBox();
+            this.Imagen_producto3 = new System.Windows.Forms.PictureBox();
+            this.Imagen_producto2 = new System.Windows.Forms.PictureBox();
             this.Btn_Siguiente = new System.Windows.Forms.Button();
             this.Btn_Anterior = new System.Windows.Forms.Button();
             this.Pnl_SigAnt = new System.Windows.Forms.Panel();
-            this.Pnl_Pagina3 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.button21 = new System.Windows.Forms.Button();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.button30 = new System.Windows.Forms.Button();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.button31 = new System.Windows.Forms.Button();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.button32 = new System.Windows.Forms.Button();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.button33 = new System.Windows.Forms.Button();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.button34 = new System.Windows.Forms.Button();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.button35 = new System.Windows.Forms.Button();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.Pnl_Pagina4 = new System.Windows.Forms.Panel();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.button38 = new System.Windows.Forms.Button();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.button39 = new System.Windows.Forms.Button();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.button40 = new System.Windows.Forms.Button();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.button41 = new System.Windows.Forms.Button();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.button42 = new System.Windows.Forms.Button();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox42 = new System.Windows.Forms.PictureBox();
-            this.button43 = new System.Windows.Forms.Button();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -198,52 +231,63 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.Pnl_Pagina1.SuspendLayout();
             this.Pnl_Pagina2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.Pnl_SigAnt.SuspendLayout();
             this.Pnl_Pagina3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             this.Pnl_Pagina4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.Celda5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto5)).BeginInit();
+            this.Celda4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto4)).BeginInit();
+            this.Celda3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto3)).BeginInit();
+            this.Celda2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto2)).BeginInit();
+            this.Celda1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto2)).BeginInit();
+            this.Pnl_SigAnt.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblUsuario
+            // lblNombre
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.Color.Black;
-            this.lblUsuario.Location = new System.Drawing.Point(228, 9);
-            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(76, 20);
-            this.lblUsuario.TabIndex = 7;
-            this.lblUsuario.Text = "lblusuario";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.Black;
+            this.lblNombre.Location = new System.Drawing.Point(228, 9);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(76, 20);
+            this.lblNombre.TabIndex = 7;
+            this.lblNombre.Text = "lblusuario";
             // 
             // label2
             // 
@@ -254,24 +298,42 @@
             this.label2.Location = new System.Drawing.Point(162, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
+            this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Usuario: ";
+            this.label2.Text = "Nombre: ";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.btnCarrito2);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.Btn_Salir);
-            this.panel1.Controls.Add(this.lblUsuario);
+            this.panel1.Controls.Add(this.lblNombre);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnCarrito1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1043, 84);
             this.panel1.TabIndex = 8;
+            // 
+            // btnCarrito2
+            // 
+            this.btnCarrito2.BackColor = System.Drawing.Color.Black;
+            this.btnCarrito2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCarrito2.BackgroundImage")));
+            this.btnCarrito2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCarrito2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarrito2.ForeColor = System.Drawing.Color.White;
+            this.btnCarrito2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCarrito2.Location = new System.Drawing.Point(831, 16);
+            this.btnCarrito2.Name = "btnCarrito2";
+            this.btnCarrito2.Size = new System.Drawing.Size(74, 59);
+            this.btnCarrito2.TabIndex = 12;
+            this.btnCarrito2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCarrito2.UseVisualStyleBackColor = false;
+            this.btnCarrito2.Visible = false;
+            this.btnCarrito2.Click += new System.EventHandler(this.btnCarrito2_Click);
             // 
             // pictureBox5
             // 
@@ -309,30 +371,31 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Productos";
             // 
-            // button5
+            // btnCarrito1
             // 
-            this.button5.BackColor = System.Drawing.Color.Black;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(831, 15);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(74, 59);
-            this.button5.TabIndex = 10;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCarrito1.BackColor = System.Drawing.Color.Black;
+            this.btnCarrito1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCarrito1.BackgroundImage")));
+            this.btnCarrito1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCarrito1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarrito1.ForeColor = System.Drawing.Color.White;
+            this.btnCarrito1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCarrito1.Location = new System.Drawing.Point(831, 15);
+            this.btnCarrito1.Name = "btnCarrito1";
+            this.btnCarrito1.Size = new System.Drawing.Size(74, 59);
+            this.btnCarrito1.TabIndex = 10;
+            this.btnCarrito1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCarrito1.UseVisualStyleBackColor = false;
+            this.btnCarrito1.Click += new System.EventHandler(this.button5_Click);
             // 
-            // pictureBox1
+            // Imagen_producto1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(45, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.Imagen_producto1.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto1.Image")));
+            this.Imagen_producto1.Location = new System.Drawing.Point(45, 4);
+            this.Imagen_producto1.Name = "Imagen_producto1";
+            this.Imagen_producto1.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto1.TabIndex = 11;
+            this.Imagen_producto1.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -414,18 +477,19 @@
             this.pictureBox17.TabIndex = 23;
             this.pictureBox17.TabStop = false;
             // 
-            // button1
+            // Btn_Añadir1
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(45, 249);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(208, 38);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Añadir al Carrito";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Btn_Añadir1.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir1.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir1.Location = new System.Drawing.Point(45, 249);
+            this.Btn_Añadir1.Name = "Btn_Añadir1";
+            this.Btn_Añadir1.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir1.TabIndex = 24;
+            this.Btn_Añadir1.Text = "Añadir al Carrito";
+            this.Btn_Añadir1.UseVisualStyleBackColor = false;
+            this.Btn_Añadir1.Click += new System.EventHandler(this.Btn_Añadir1_Click);
             // 
             // button7
             // 
@@ -562,750 +626,1809 @@
             this.Pnl_Pagina1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Pnl_Pagina1.Controls.Add(this.Pnl_Pagina2);
-            this.Pnl_Pagina1.Controls.Add(this.label17);
-            this.Pnl_Pagina1.Controls.Add(this.label18);
-            this.Pnl_Pagina1.Controls.Add(this.button19);
-            this.Pnl_Pagina1.Controls.Add(this.pictureBox19);
-            this.Pnl_Pagina1.Controls.Add(this.label15);
-            this.Pnl_Pagina1.Controls.Add(this.label16);
-            this.Pnl_Pagina1.Controls.Add(this.button18);
-            this.Pnl_Pagina1.Controls.Add(this.pictureBox18);
-            this.Pnl_Pagina1.Controls.Add(this.label13);
-            this.Pnl_Pagina1.Controls.Add(this.label14);
-            this.Pnl_Pagina1.Controls.Add(this.button17);
-            this.Pnl_Pagina1.Controls.Add(this.pictureBox15);
-            this.Pnl_Pagina1.Controls.Add(this.label1);
-            this.Pnl_Pagina1.Controls.Add(this.label12);
-            this.Pnl_Pagina1.Controls.Add(this.button6);
-            this.Pnl_Pagina1.Controls.Add(this.pictureBox12);
-            this.Pnl_Pagina1.Controls.Add(this.label10);
-            this.Pnl_Pagina1.Controls.Add(this.label11);
-            this.Pnl_Pagina1.Controls.Add(this.button4);
-            this.Pnl_Pagina1.Controls.Add(this.label8);
-            this.Pnl_Pagina1.Controls.Add(this.label9);
-            this.Pnl_Pagina1.Controls.Add(this.button3);
-            this.Pnl_Pagina1.Controls.Add(this.label6);
-            this.Pnl_Pagina1.Controls.Add(this.label7);
-            this.Pnl_Pagina1.Controls.Add(this.button2);
-            this.Pnl_Pagina1.Controls.Add(this.label5);
-            this.Pnl_Pagina1.Controls.Add(this.label4);
-            this.Pnl_Pagina1.Controls.Add(this.pictureBox4);
-            this.Pnl_Pagina1.Controls.Add(this.pictureBox3);
-            this.Pnl_Pagina1.Controls.Add(this.pictureBox2);
-            this.Pnl_Pagina1.Controls.Add(this.button1);
-            this.Pnl_Pagina1.Controls.Add(this.pictureBox1);
-            this.Pnl_Pagina1.Location = new System.Drawing.Point(0, 90);
+            this.Pnl_Pagina1.Controls.Add(this.N_Producto8);
+            this.Pnl_Pagina1.Controls.Add(this.Precio_Producto8);
+            this.Pnl_Pagina1.Controls.Add(this.Btn_Añadir8);
+            this.Pnl_Pagina1.Controls.Add(this.Imagen_producto8);
+            this.Pnl_Pagina1.Controls.Add(this.N_Producto7);
+            this.Pnl_Pagina1.Controls.Add(this.Precio_Producto7);
+            this.Pnl_Pagina1.Controls.Add(this.Btn_Añadir7);
+            this.Pnl_Pagina1.Controls.Add(this.Imagen_producto7);
+            this.Pnl_Pagina1.Controls.Add(this.N_Producto6);
+            this.Pnl_Pagina1.Controls.Add(this.Precio_Producto6);
+            this.Pnl_Pagina1.Controls.Add(this.Btn_Añadir6);
+            this.Pnl_Pagina1.Controls.Add(this.Imagen_producto6);
+            this.Pnl_Pagina1.Controls.Add(this.N_Producto5);
+            this.Pnl_Pagina1.Controls.Add(this.Precio_Producto5);
+            this.Pnl_Pagina1.Controls.Add(this.Btn_Añadir5);
+            this.Pnl_Pagina1.Controls.Add(this.Imagen_producto5);
+            this.Pnl_Pagina1.Controls.Add(this.N_Producto4);
+            this.Pnl_Pagina1.Controls.Add(this.Precio_Producto4);
+            this.Pnl_Pagina1.Controls.Add(this.Btn_Añadir4);
+            this.Pnl_Pagina1.Controls.Add(this.N_Producto3);
+            this.Pnl_Pagina1.Controls.Add(this.Precio_Producto3);
+            this.Pnl_Pagina1.Controls.Add(this.Btn_Añadir3);
+            this.Pnl_Pagina1.Controls.Add(this.N_Producto2);
+            this.Pnl_Pagina1.Controls.Add(this.Precio_Producto2);
+            this.Pnl_Pagina1.Controls.Add(this.Btn_Añadir2);
+            this.Pnl_Pagina1.Controls.Add(this.N_Producto1);
+            this.Pnl_Pagina1.Controls.Add(this.Precio_Producto1);
+            this.Pnl_Pagina1.Controls.Add(this.Imagen_producto4);
+            this.Pnl_Pagina1.Controls.Add(this.Imagen_producto3);
+            this.Pnl_Pagina1.Controls.Add(this.Imagen_producto2);
+            this.Pnl_Pagina1.Controls.Add(this.Btn_Añadir1);
+            this.Pnl_Pagina1.Controls.Add(this.Imagen_producto1);
+            this.Pnl_Pagina1.Location = new System.Drawing.Point(0, 81);
             this.Pnl_Pagina1.Name = "Pnl_Pagina1";
-            this.Pnl_Pagina1.Size = new System.Drawing.Size(1043, 595);
+            this.Pnl_Pagina1.Size = new System.Drawing.Size(1043, 604);
             this.Pnl_Pagina1.TabIndex = 38;
             // 
             // Pnl_Pagina2
             // 
             this.Pnl_Pagina2.Controls.Add(this.Pnl_Pagina3);
-            this.Pnl_Pagina2.Controls.Add(this.label19);
-            this.Pnl_Pagina2.Controls.Add(this.label20);
-            this.Pnl_Pagina2.Controls.Add(this.button22);
-            this.Pnl_Pagina2.Controls.Add(this.pictureBox20);
-            this.Pnl_Pagina2.Controls.Add(this.label21);
-            this.Pnl_Pagina2.Controls.Add(this.label22);
-            this.Pnl_Pagina2.Controls.Add(this.button23);
-            this.Pnl_Pagina2.Controls.Add(this.pictureBox21);
-            this.Pnl_Pagina2.Controls.Add(this.label23);
-            this.Pnl_Pagina2.Controls.Add(this.label24);
-            this.Pnl_Pagina2.Controls.Add(this.button24);
-            this.Pnl_Pagina2.Controls.Add(this.pictureBox22);
-            this.Pnl_Pagina2.Controls.Add(this.label25);
-            this.Pnl_Pagina2.Controls.Add(this.label26);
-            this.Pnl_Pagina2.Controls.Add(this.button25);
-            this.Pnl_Pagina2.Controls.Add(this.pictureBox23);
-            this.Pnl_Pagina2.Controls.Add(this.label27);
-            this.Pnl_Pagina2.Controls.Add(this.label28);
-            this.Pnl_Pagina2.Controls.Add(this.button26);
-            this.Pnl_Pagina2.Controls.Add(this.label29);
-            this.Pnl_Pagina2.Controls.Add(this.label30);
-            this.Pnl_Pagina2.Controls.Add(this.button27);
-            this.Pnl_Pagina2.Controls.Add(this.label31);
-            this.Pnl_Pagina2.Controls.Add(this.label32);
-            this.Pnl_Pagina2.Controls.Add(this.button28);
-            this.Pnl_Pagina2.Controls.Add(this.label33);
-            this.Pnl_Pagina2.Controls.Add(this.label34);
-            this.Pnl_Pagina2.Controls.Add(this.pictureBox24);
-            this.Pnl_Pagina2.Controls.Add(this.pictureBox25);
-            this.Pnl_Pagina2.Controls.Add(this.pictureBox26);
-            this.Pnl_Pagina2.Controls.Add(this.button29);
-            this.Pnl_Pagina2.Controls.Add(this.pictureBox27);
+            this.Pnl_Pagina2.Controls.Add(this.Nombre_producto16);
+            this.Pnl_Pagina2.Controls.Add(this.Precio_producto16);
+            this.Pnl_Pagina2.Controls.Add(this.Btn_Añadir16);
+            this.Pnl_Pagina2.Controls.Add(this.Imagen_producto16);
+            this.Pnl_Pagina2.Controls.Add(this.Nombre_producto15);
+            this.Pnl_Pagina2.Controls.Add(this.Precio_producto15);
+            this.Pnl_Pagina2.Controls.Add(this.Btn_Añadir15);
+            this.Pnl_Pagina2.Controls.Add(this.Imagen_producto15);
+            this.Pnl_Pagina2.Controls.Add(this.Nombre_producto14);
+            this.Pnl_Pagina2.Controls.Add(this.Precio_producto14);
+            this.Pnl_Pagina2.Controls.Add(this.Btn_Añadir14);
+            this.Pnl_Pagina2.Controls.Add(this.Imagen_producto14);
+            this.Pnl_Pagina2.Controls.Add(this.Nombre_producto13);
+            this.Pnl_Pagina2.Controls.Add(this.Precio_producto13);
+            this.Pnl_Pagina2.Controls.Add(this.Btn_Añadir13);
+            this.Pnl_Pagina2.Controls.Add(this.Imagen_producto13);
+            this.Pnl_Pagina2.Controls.Add(this.Nombre_producto12);
+            this.Pnl_Pagina2.Controls.Add(this.Precio_producto12);
+            this.Pnl_Pagina2.Controls.Add(this.Btn_Añadir12);
+            this.Pnl_Pagina2.Controls.Add(this.Nombre_producto11);
+            this.Pnl_Pagina2.Controls.Add(this.Precio_producto11);
+            this.Pnl_Pagina2.Controls.Add(this.Btn_Añadir11);
+            this.Pnl_Pagina2.Controls.Add(this.Nombre_producto10);
+            this.Pnl_Pagina2.Controls.Add(this.Precio_producto10);
+            this.Pnl_Pagina2.Controls.Add(this.Btn_Añadir10);
+            this.Pnl_Pagina2.Controls.Add(this.Nombre_producto9);
+            this.Pnl_Pagina2.Controls.Add(this.Precio_producto9);
+            this.Pnl_Pagina2.Controls.Add(this.Imagen_producto12);
+            this.Pnl_Pagina2.Controls.Add(this.Imagen_producto11);
+            this.Pnl_Pagina2.Controls.Add(this.Imagen_producto10);
+            this.Pnl_Pagina2.Controls.Add(this.Btn_Añadir9);
+            this.Pnl_Pagina2.Controls.Add(this.Imagen_producto9);
             this.Pnl_Pagina2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pnl_Pagina2.Location = new System.Drawing.Point(0, 0);
             this.Pnl_Pagina2.Name = "Pnl_Pagina2";
-            this.Pnl_Pagina2.Size = new System.Drawing.Size(1043, 595);
+            this.Pnl_Pagina2.Size = new System.Drawing.Size(1043, 604);
             this.Pnl_Pagina2.TabIndex = 58;
             this.Pnl_Pagina2.Visible = false;
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(784, 474);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(80, 24);
-            this.label19.TabIndex = 57;
-            this.label19.Text = "Dimenol";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(859, 508);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(60, 18);
-            this.label20.TabIndex = 56;
-            this.label20.Text = "$18.500";
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.Black;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Location = new System.Drawing.Point(781, 538);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(208, 38);
-            this.button22.TabIndex = 55;
-            this.button22.Text = "Añadir al Carrito";
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(781, 293);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox20.TabIndex = 54;
-            this.pictureBox20.TabStop = false;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(547, 474);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(213, 24);
-            this.label21.TabIndex = 53;
-            this.label21.Text = "Tamsulosina Clorhidrate";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(619, 508);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(60, 18);
-            this.label22.TabIndex = 52;
-            this.label22.Text = "$10.000";
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.Black;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.White;
-            this.button23.Location = new System.Drawing.Point(544, 538);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(208, 38);
-            this.button23.TabIndex = 51;
-            this.button23.Text = "Añadir al Carrito";
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(544, 293);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox21.TabIndex = 50;
-            this.pictureBox21.TabStop = false;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(295, 474);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(81, 24);
-            this.label23.TabIndex = 49;
-            this.label23.Text = "Electrolit";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(376, 508);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(52, 18);
-            this.label24.TabIndex = 48;
-            this.label24.Text = "$8.000";
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.Black;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.ForeColor = System.Drawing.Color.White;
-            this.button24.Location = new System.Drawing.Point(292, 538);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(208, 38);
-            this.button24.TabIndex = 47;
-            this.button24.Text = "Añadir al Carrito";
-            this.button24.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(292, 293);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox22.TabIndex = 46;
-            this.pictureBox22.TabStop = false;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(48, 474);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(114, 24);
-            this.label25.TabIndex = 45;
-            this.label25.Text = "Glucophage";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(124, 508);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(52, 18);
-            this.label26.TabIndex = 44;
-            this.label26.Text = "$7.000";
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.Color.Black;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.Location = new System.Drawing.Point(45, 538);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(208, 38);
-            this.button25.TabIndex = 43;
-            this.button25.Text = "Añadir al Carrito";
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(45, 293);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox23.TabIndex = 42;
-            this.pictureBox23.TabStop = false;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(784, 185);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(60, 24);
-            this.label27.TabIndex = 41;
-            this.label27.Text = "Andol";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(867, 219);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 18);
-            this.label28.TabIndex = 40;
-            this.label28.Text = "$14.000";
-            // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.Color.Black;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.Location = new System.Drawing.Point(781, 249);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(208, 38);
-            this.button26.TabIndex = 39;
-            this.button26.Text = "Añadir al Carrito";
-            this.button26.UseVisualStyleBackColor = false;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(547, 185);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(105, 24);
-            this.label29.TabIndex = 38;
-            this.label29.Text = "Biodramina";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(619, 219);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(60, 18);
-            this.label30.TabIndex = 37;
-            this.label30.Text = "$13.000";
-            // 
-            // button27
-            // 
-            this.button27.BackColor = System.Drawing.Color.Black;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.White;
-            this.button27.Location = new System.Drawing.Point(544, 249);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(208, 38);
-            this.button27.TabIndex = 36;
-            this.button27.Text = "Añadir al Carrito";
-            this.button27.UseVisualStyleBackColor = false;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(295, 185);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(79, 24);
-            this.label31.TabIndex = 35;
-            this.label31.Text = "Ventonil";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(364, 219);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(60, 18);
-            this.label32.TabIndex = 34;
-            this.label32.Text = "$42.000";
-            // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.Color.Black;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.White;
-            this.button28.Location = new System.Drawing.Point(292, 249);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(208, 38);
-            this.button28.TabIndex = 33;
-            this.button28.Text = "Añadir al Carrito";
-            this.button28.UseVisualStyleBackColor = false;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(48, 185);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(109, 24);
-            this.label33.TabIndex = 32;
-            this.label33.Text = "Diclofenaco";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(116, 219);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(60, 18);
-            this.label34.TabIndex = 31;
-            this.label34.Text = "$12.000";
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(781, 3);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox24.TabIndex = 29;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
-            this.pictureBox25.Location = new System.Drawing.Point(544, 3);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox25.TabIndex = 27;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
-            this.pictureBox26.Location = new System.Drawing.Point(292, 3);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox26.TabIndex = 25;
-            this.pictureBox26.TabStop = false;
-            // 
-            // button29
-            // 
-            this.button29.BackColor = System.Drawing.Color.Black;
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.ForeColor = System.Drawing.Color.White;
-            this.button29.Location = new System.Drawing.Point(45, 249);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(208, 38);
-            this.button29.TabIndex = 24;
-            this.button29.Text = "Añadir al Carrito";
-            this.button29.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
-            this.pictureBox27.Location = new System.Drawing.Point(45, 4);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox27.TabIndex = 11;
-            this.pictureBox27.TabStop = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(784, 474);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(109, 24);
-            this.label17.TabIndex = 57;
-            this.label17.Text = "Pantoprazol";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(859, 508);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 18);
-            this.label18.TabIndex = 56;
-            this.label18.Text = "$14.500";
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.Black;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Location = new System.Drawing.Point(781, 538);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(208, 38);
-            this.button19.TabIndex = 55;
-            this.button19.Text = "Añadir al Carrito";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(781, 293);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox19.TabIndex = 54;
-            this.pictureBox19.TabStop = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(547, 474);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(150, 24);
-            this.label15.TabIndex = 53;
-            this.label15.Text = "Hidroclorotiazida";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(619, 508);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(60, 18);
-            this.label16.TabIndex = 52;
-            this.label16.Text = "$10.000";
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.Black;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Location = new System.Drawing.Point(544, 538);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(208, 38);
-            this.button18.TabIndex = 51;
-            this.button18.Text = "Añadir al Carrito";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(544, 293);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 50;
-            this.pictureBox18.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(295, 474);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(121, 24);
-            this.label13.TabIndex = 49;
-            this.label13.Text = "Fluviral Noire";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(376, 508);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 18);
-            this.label14.TabIndex = 48;
-            this.label14.Text = "$4.000";
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.Black;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Location = new System.Drawing.Point(292, 538);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(208, 38);
-            this.button17.TabIndex = 47;
-            this.button17.Text = "Añadir al Carrito";
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(292, 293);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 46;
-            this.pictureBox15.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(48, 474);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 24);
-            this.label1.TabIndex = 45;
-            this.label1.Text = "Dolex";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(124, 508);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 18);
-            this.label12.TabIndex = 44;
-            this.label12.Text = "$9.000";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Black;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(45, 538);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(208, 38);
-            this.button6.TabIndex = 43;
-            this.button6.Text = "Añadir al Carrito";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(45, 293);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 42;
-            this.pictureBox12.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(784, 185);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 24);
-            this.label10.TabIndex = 41;
-            this.label10.Text = "Viagra";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(867, 219);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 18);
-            this.label11.TabIndex = 40;
-            this.label11.Text = "$12.000";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(781, 249);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(208, 38);
-            this.button4.TabIndex = 39;
-            this.button4.Text = "Añadir al Carrito";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(547, 185);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 24);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "Biodramina";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(619, 219);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 18);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "$25.000";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(544, 249);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(208, 38);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Añadir al Carrito";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(295, 185);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 24);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Fluvis";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(364, 219);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 18);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "$35.000";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(292, 249);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(208, 38);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Añadir al Carrito";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 185);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 24);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Simepar";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(116, 219);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 18);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "$18.000";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(781, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 29;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(544, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 27;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(292, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
+            // Pnl_Pagina3
+            // 
+            this.Pnl_Pagina3.Controls.Add(this.Pnl_Pagina4);
+            this.Pnl_Pagina3.Controls.Add(this.Nombre_producto24);
+            this.Pnl_Pagina3.Controls.Add(this.Precio_producto24);
+            this.Pnl_Pagina3.Controls.Add(this.Btn_Añadir24);
+            this.Pnl_Pagina3.Controls.Add(this.Imagen_producto24);
+            this.Pnl_Pagina3.Controls.Add(this.Nombre_producto23);
+            this.Pnl_Pagina3.Controls.Add(this.Precio_producto23);
+            this.Pnl_Pagina3.Controls.Add(this.Btn_Añadir23);
+            this.Pnl_Pagina3.Controls.Add(this.Imagen_producto23);
+            this.Pnl_Pagina3.Controls.Add(this.Nombre_producto22);
+            this.Pnl_Pagina3.Controls.Add(this.Precio_producto22);
+            this.Pnl_Pagina3.Controls.Add(this.Btn_Añadir22);
+            this.Pnl_Pagina3.Controls.Add(this.Imagen_producto22);
+            this.Pnl_Pagina3.Controls.Add(this.Nombre_producto21);
+            this.Pnl_Pagina3.Controls.Add(this.Precio_producto21);
+            this.Pnl_Pagina3.Controls.Add(this.Btn_Añadir21);
+            this.Pnl_Pagina3.Controls.Add(this.Imagen_producto21);
+            this.Pnl_Pagina3.Controls.Add(this.Nombre_producto20);
+            this.Pnl_Pagina3.Controls.Add(this.Precio_producto20);
+            this.Pnl_Pagina3.Controls.Add(this.Btn_Añadir20);
+            this.Pnl_Pagina3.Controls.Add(this.Nombre_producto19);
+            this.Pnl_Pagina3.Controls.Add(this.Precio_producto19);
+            this.Pnl_Pagina3.Controls.Add(this.Btn_Añadir19);
+            this.Pnl_Pagina3.Controls.Add(this.Nombre_producto18);
+            this.Pnl_Pagina3.Controls.Add(this.Precio_producto18);
+            this.Pnl_Pagina3.Controls.Add(this.Btn_Añadir18);
+            this.Pnl_Pagina3.Controls.Add(this.Nombre_producto17);
+            this.Pnl_Pagina3.Controls.Add(this.Precio_producto17);
+            this.Pnl_Pagina3.Controls.Add(this.Imagen_producto20);
+            this.Pnl_Pagina3.Controls.Add(this.Imagen_producto19);
+            this.Pnl_Pagina3.Controls.Add(this.Imagen_producto18);
+            this.Pnl_Pagina3.Controls.Add(this.Btn_Añadir17);
+            this.Pnl_Pagina3.Controls.Add(this.Imagen_producto17);
+            this.Pnl_Pagina3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_Pagina3.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_Pagina3.Name = "Pnl_Pagina3";
+            this.Pnl_Pagina3.Size = new System.Drawing.Size(1043, 604);
+            this.Pnl_Pagina3.TabIndex = 59;
+            this.Pnl_Pagina3.Visible = false;
+            // 
+            // Pnl_Pagina4
+            // 
+            this.Pnl_Pagina4.Controls.Add(this.panel2);
+            this.Pnl_Pagina4.Controls.Add(this.Nombre_producto30);
+            this.Pnl_Pagina4.Controls.Add(this.Precio_producto30);
+            this.Pnl_Pagina4.Controls.Add(this.Btn_Añadir30);
+            this.Pnl_Pagina4.Controls.Add(this.Imagen_producto30);
+            this.Pnl_Pagina4.Controls.Add(this.Nombre_producto29);
+            this.Pnl_Pagina4.Controls.Add(this.Precio_producto29);
+            this.Pnl_Pagina4.Controls.Add(this.Btn_Añadir29);
+            this.Pnl_Pagina4.Controls.Add(this.Imagen_producto29);
+            this.Pnl_Pagina4.Controls.Add(this.Nombre_producto28);
+            this.Pnl_Pagina4.Controls.Add(this.Precio_producto28);
+            this.Pnl_Pagina4.Controls.Add(this.Btn_Añadir28);
+            this.Pnl_Pagina4.Controls.Add(this.Nombre_producto27);
+            this.Pnl_Pagina4.Controls.Add(this.Precio_producto27);
+            this.Pnl_Pagina4.Controls.Add(this.Btn_Añadir27);
+            this.Pnl_Pagina4.Controls.Add(this.Nombre_producto26);
+            this.Pnl_Pagina4.Controls.Add(this.Precio_producto26);
+            this.Pnl_Pagina4.Controls.Add(this.Btn_Añadir26);
+            this.Pnl_Pagina4.Controls.Add(this.Nombre_producto25);
+            this.Pnl_Pagina4.Controls.Add(this.Precio_producto25);
+            this.Pnl_Pagina4.Controls.Add(this.Imagen_producto28);
+            this.Pnl_Pagina4.Controls.Add(this.Imagen_producto27);
+            this.Pnl_Pagina4.Controls.Add(this.Imagen_producto26);
+            this.Pnl_Pagina4.Controls.Add(this.Btn_Añadir25);
+            this.Pnl_Pagina4.Controls.Add(this.Imagen_producto25);
+            this.Pnl_Pagina4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_Pagina4.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_Pagina4.Name = "Pnl_Pagina4";
+            this.Pnl_Pagina4.Size = new System.Drawing.Size(1043, 604);
+            this.Pnl_Pagina4.TabIndex = 60;
+            this.Pnl_Pagina4.Visible = false;
+            this.Pnl_Pagina4.Paint += new System.Windows.Forms.PaintEventHandler(this.Pnl_Pagina4_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Celda5);
+            this.panel2.Controls.Add(this.Celda4);
+            this.panel2.Controls.Add(this.Celda3);
+            this.panel2.Controls.Add(this.Celda2);
+            this.panel2.Controls.Add(this.Celda1);
+            this.panel2.Location = new System.Drawing.Point(94, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(811, 449);
+            this.panel2.TabIndex = 50;
+            this.panel2.Visible = false;
+            // 
+            // Celda5
+            // 
+            this.Celda5.Controls.Add(this.lbl_Estado5);
+            this.Celda5.Controls.Add(this.button46);
+            this.Celda5.Controls.Add(this.Btn_Comprar);
+            this.Celda5.Controls.Add(this.ProductoN5);
+            this.Celda5.Controls.Add(this.PrecioProducto5);
+            this.Celda5.Controls.Add(this.ImagenProducto5);
+            this.Celda5.Location = new System.Drawing.Point(0, 360);
+            this.Celda5.Name = "Celda5";
+            this.Celda5.Size = new System.Drawing.Size(821, 87);
+            this.Celda5.TabIndex = 5;
+            this.Celda5.Visible = false;
+            // 
+            // lbl_Estado5
+            // 
+            this.lbl_Estado5.AutoSize = true;
+            this.lbl_Estado5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Estado5.Location = new System.Drawing.Point(598, 59);
+            this.lbl_Estado5.Name = "lbl_Estado5";
+            this.lbl_Estado5.Size = new System.Drawing.Size(77, 18);
+            this.lbl_Estado5.TabIndex = 8;
+            this.lbl_Estado5.Text = "Disponible";
+            this.lbl_Estado5.Visible = false;
+            // 
+            // button46
+            // 
+            this.button46.BackColor = System.Drawing.Color.OrangeRed;
+            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button46.Location = new System.Drawing.Point(355, 32);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(25, 25);
+            this.button46.TabIndex = 7;
+            this.button46.Text = "x";
+            this.button46.UseVisualStyleBackColor = false;
+            // 
+            // Btn_Comprar
+            // 
+            this.Btn_Comprar.BackColor = System.Drawing.Color.LimeGreen;
+            this.Btn_Comprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Comprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Comprar.Location = new System.Drawing.Point(714, 23);
+            this.Btn_Comprar.Name = "Btn_Comprar";
+            this.Btn_Comprar.Size = new System.Drawing.Size(107, 61);
+            this.Btn_Comprar.TabIndex = 3;
+            this.Btn_Comprar.Text = "Comprar";
+            this.Btn_Comprar.UseVisualStyleBackColor = false;
+            // 
+            // ProductoN5
+            // 
+            this.ProductoN5.AutoSize = true;
+            this.ProductoN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductoN5.Location = new System.Drawing.Point(106, 23);
+            this.ProductoN5.Name = "ProductoN5";
+            this.ProductoN5.Size = new System.Drawing.Size(198, 29);
+            this.ProductoN5.TabIndex = 2;
+            this.ProductoN5.Text = "NombreProducto";
+            // 
+            // PrecioProducto5
+            // 
+            this.PrecioProducto5.AutoSize = true;
+            this.PrecioProducto5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrecioProducto5.Location = new System.Drawing.Point(106, 60);
+            this.PrecioProducto5.Name = "PrecioProducto5";
+            this.PrecioProducto5.Size = new System.Drawing.Size(112, 18);
+            this.PrecioProducto5.TabIndex = 1;
+            this.PrecioProducto5.Text = "PrecioProducto";
+            // 
+            // ImagenProducto5
+            // 
+            this.ImagenProducto5.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto5.Name = "ImagenProducto5";
+            this.ImagenProducto5.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto5.TabIndex = 0;
+            this.ImagenProducto5.TabStop = false;
+            // 
+            // Celda4
+            // 
+            this.Celda4.Controls.Add(this.lbl_Estado4);
+            this.Celda4.Controls.Add(this.button45);
+            this.Celda4.Controls.Add(this.ProductoN4);
+            this.Celda4.Controls.Add(this.PrecioProducto4);
+            this.Celda4.Controls.Add(this.ImagenProducto4);
+            this.Celda4.Location = new System.Drawing.Point(0, 270);
+            this.Celda4.Name = "Celda4";
+            this.Celda4.Size = new System.Drawing.Size(821, 87);
+            this.Celda4.TabIndex = 4;
+            this.Celda4.Visible = false;
+            // 
+            // lbl_Estado4
+            // 
+            this.lbl_Estado4.AutoSize = true;
+            this.lbl_Estado4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Estado4.Location = new System.Drawing.Point(701, 60);
+            this.lbl_Estado4.Name = "lbl_Estado4";
+            this.lbl_Estado4.Size = new System.Drawing.Size(77, 18);
+            this.lbl_Estado4.TabIndex = 8;
+            this.lbl_Estado4.Text = "Disponible";
+            this.lbl_Estado4.Visible = false;
+            // 
+            // button45
+            // 
+            this.button45.BackColor = System.Drawing.Color.OrangeRed;
+            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.Location = new System.Drawing.Point(355, 29);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(25, 25);
+            this.button45.TabIndex = 6;
+            this.button45.Text = "x";
+            this.button45.UseVisualStyleBackColor = false;
+            // 
+            // ProductoN4
+            // 
+            this.ProductoN4.AutoSize = true;
+            this.ProductoN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductoN4.Location = new System.Drawing.Point(106, 23);
+            this.ProductoN4.Name = "ProductoN4";
+            this.ProductoN4.Size = new System.Drawing.Size(198, 29);
+            this.ProductoN4.TabIndex = 2;
+            this.ProductoN4.Text = "NombreProducto";
+            // 
+            // PrecioProducto4
+            // 
+            this.PrecioProducto4.AutoSize = true;
+            this.PrecioProducto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrecioProducto4.Location = new System.Drawing.Point(106, 60);
+            this.PrecioProducto4.Name = "PrecioProducto4";
+            this.PrecioProducto4.Size = new System.Drawing.Size(112, 18);
+            this.PrecioProducto4.TabIndex = 1;
+            this.PrecioProducto4.Text = "PrecioProducto";
+            // 
+            // ImagenProducto4
+            // 
+            this.ImagenProducto4.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto4.Name = "ImagenProducto4";
+            this.ImagenProducto4.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto4.TabIndex = 0;
+            this.ImagenProducto4.TabStop = false;
+            // 
+            // Celda3
+            // 
+            this.Celda3.Controls.Add(this.lbl_Estado3);
+            this.Celda3.Controls.Add(this.button44);
+            this.Celda3.Controls.Add(this.ProductoN3);
+            this.Celda3.Controls.Add(this.PrecioProducto3);
+            this.Celda3.Controls.Add(this.ImagenProducto3);
+            this.Celda3.Location = new System.Drawing.Point(0, 180);
+            this.Celda3.Name = "Celda3";
+            this.Celda3.Size = new System.Drawing.Size(821, 87);
+            this.Celda3.TabIndex = 4;
+            this.Celda3.Visible = false;
+            // 
+            // lbl_Estado3
+            // 
+            this.lbl_Estado3.AutoSize = true;
+            this.lbl_Estado3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Estado3.Location = new System.Drawing.Point(694, 58);
+            this.lbl_Estado3.Name = "lbl_Estado3";
+            this.lbl_Estado3.Size = new System.Drawing.Size(77, 18);
+            this.lbl_Estado3.TabIndex = 7;
+            this.lbl_Estado3.Text = "Disponible";
+            this.lbl_Estado3.Visible = false;
+            // 
+            // button44
+            // 
+            this.button44.BackColor = System.Drawing.Color.OrangeRed;
+            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.Location = new System.Drawing.Point(355, 29);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(25, 25);
+            this.button44.TabIndex = 5;
+            this.button44.Text = "x";
+            this.button44.UseVisualStyleBackColor = false;
+            // 
+            // ProductoN3
+            // 
+            this.ProductoN3.AutoSize = true;
+            this.ProductoN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductoN3.Location = new System.Drawing.Point(106, 23);
+            this.ProductoN3.Name = "ProductoN3";
+            this.ProductoN3.Size = new System.Drawing.Size(198, 29);
+            this.ProductoN3.TabIndex = 2;
+            this.ProductoN3.Text = "NombreProducto";
+            this.ProductoN3.Click += new System.EventHandler(this.label67_Click);
+            // 
+            // PrecioProducto3
+            // 
+            this.PrecioProducto3.AutoSize = true;
+            this.PrecioProducto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrecioProducto3.Location = new System.Drawing.Point(106, 60);
+            this.PrecioProducto3.Name = "PrecioProducto3";
+            this.PrecioProducto3.Size = new System.Drawing.Size(112, 18);
+            this.PrecioProducto3.TabIndex = 1;
+            this.PrecioProducto3.Text = "PrecioProducto";
+            // 
+            // ImagenProducto3
+            // 
+            this.ImagenProducto3.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto3.Name = "ImagenProducto3";
+            this.ImagenProducto3.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto3.TabIndex = 0;
+            this.ImagenProducto3.TabStop = false;
+            // 
+            // Celda2
+            // 
+            this.Celda2.Controls.Add(this.lbl_Estado2);
+            this.Celda2.Controls.Add(this.button37);
+            this.Celda2.Controls.Add(this.ProductoN2);
+            this.Celda2.Controls.Add(this.PrecioProducto2);
+            this.Celda2.Controls.Add(this.ImagenProducto2);
+            this.Celda2.Location = new System.Drawing.Point(0, 90);
+            this.Celda2.Name = "Celda2";
+            this.Celda2.Size = new System.Drawing.Size(821, 87);
+            this.Celda2.TabIndex = 4;
+            this.Celda2.Visible = false;
+            // 
+            // lbl_Estado2
+            // 
+            this.lbl_Estado2.AutoSize = true;
+            this.lbl_Estado2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Estado2.Location = new System.Drawing.Point(694, 60);
+            this.lbl_Estado2.Name = "lbl_Estado2";
+            this.lbl_Estado2.Size = new System.Drawing.Size(77, 18);
+            this.lbl_Estado2.TabIndex = 6;
+            this.lbl_Estado2.Text = "Disponible";
+            this.lbl_Estado2.Visible = false;
+            // 
+            // button37
+            // 
+            this.button37.BackColor = System.Drawing.Color.OrangeRed;
+            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.Location = new System.Drawing.Point(355, 29);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(25, 25);
+            this.button37.TabIndex = 5;
+            this.button37.Text = "x";
+            this.button37.UseVisualStyleBackColor = false;
+            // 
+            // ProductoN2
+            // 
+            this.ProductoN2.AutoSize = true;
+            this.ProductoN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductoN2.Location = new System.Drawing.Point(106, 23);
+            this.ProductoN2.Name = "ProductoN2";
+            this.ProductoN2.Size = new System.Drawing.Size(198, 29);
+            this.ProductoN2.TabIndex = 2;
+            this.ProductoN2.Text = "NombreProducto";
+            // 
+            // PrecioProducto2
+            // 
+            this.PrecioProducto2.AutoSize = true;
+            this.PrecioProducto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrecioProducto2.Location = new System.Drawing.Point(106, 60);
+            this.PrecioProducto2.Name = "PrecioProducto2";
+            this.PrecioProducto2.Size = new System.Drawing.Size(112, 18);
+            this.PrecioProducto2.TabIndex = 1;
+            this.PrecioProducto2.Text = "PrecioProducto";
+            // 
+            // ImagenProducto2
+            // 
+            this.ImagenProducto2.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto2.Name = "ImagenProducto2";
+            this.ImagenProducto2.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto2.TabIndex = 0;
+            this.ImagenProducto2.TabStop = false;
+            // 
+            // Celda1
+            // 
+            this.Celda1.Controls.Add(this.lbl_Estado1);
+            this.Celda1.Controls.Add(this.button36);
+            this.Celda1.Controls.Add(this.ProductoN1);
+            this.Celda1.Controls.Add(this.PrecioProducto1);
+            this.Celda1.Controls.Add(this.ImagenProducto);
+            this.Celda1.Location = new System.Drawing.Point(0, 0);
+            this.Celda1.Name = "Celda1";
+            this.Celda1.Size = new System.Drawing.Size(821, 87);
+            this.Celda1.TabIndex = 0;
+            this.Celda1.Visible = false;
+            // 
+            // lbl_Estado1
+            // 
+            this.lbl_Estado1.AutoSize = true;
+            this.lbl_Estado1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Estado1.Location = new System.Drawing.Point(694, 60);
+            this.lbl_Estado1.Name = "lbl_Estado1";
+            this.lbl_Estado1.Size = new System.Drawing.Size(77, 18);
+            this.lbl_Estado1.TabIndex = 5;
+            this.lbl_Estado1.Text = "Disponible";
+            this.lbl_Estado1.Visible = false;
+            // 
+            // button36
+            // 
+            this.button36.BackColor = System.Drawing.Color.OrangeRed;
+            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button36.Location = new System.Drawing.Point(355, 39);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(25, 25);
+            this.button36.TabIndex = 4;
+            this.button36.Text = "x";
+            this.button36.UseVisualStyleBackColor = false;
+            // 
+            // ProductoN1
+            // 
+            this.ProductoN1.AutoSize = true;
+            this.ProductoN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductoN1.Location = new System.Drawing.Point(106, 23);
+            this.ProductoN1.Name = "ProductoN1";
+            this.ProductoN1.Size = new System.Drawing.Size(198, 29);
+            this.ProductoN1.TabIndex = 2;
+            this.ProductoN1.Text = "NombreProducto";
+            // 
+            // PrecioProducto1
+            // 
+            this.PrecioProducto1.AutoSize = true;
+            this.PrecioProducto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrecioProducto1.Location = new System.Drawing.Point(106, 60);
+            this.PrecioProducto1.Name = "PrecioProducto1";
+            this.PrecioProducto1.Size = new System.Drawing.Size(112, 18);
+            this.PrecioProducto1.TabIndex = 1;
+            this.PrecioProducto1.Text = "PrecioProducto";
+            this.PrecioProducto1.Click += new System.EventHandler(this.PrecioProducto1_Click);
+            // 
+            // ImagenProducto
+            // 
+            this.ImagenProducto.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto.Name = "ImagenProducto";
+            this.ImagenProducto.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto.TabIndex = 0;
+            this.ImagenProducto.TabStop = false;
+            this.ImagenProducto.Click += new System.EventHandler(this.ImagenProducto_Click);
+            // 
+            // Nombre_producto30
+            // 
+            this.Nombre_producto30.AutoSize = true;
+            this.Nombre_producto30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto30.Location = new System.Drawing.Point(295, 474);
+            this.Nombre_producto30.Name = "Nombre_producto30";
+            this.Nombre_producto30.Size = new System.Drawing.Size(81, 24);
+            this.Nombre_producto30.TabIndex = 49;
+            this.Nombre_producto30.Text = "Noxpirin";
+            // 
+            // Precio_producto30
+            // 
+            this.Precio_producto30.AutoSize = true;
+            this.Precio_producto30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto30.Location = new System.Drawing.Point(376, 508);
+            this.Precio_producto30.Name = "Precio_producto30";
+            this.Precio_producto30.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto30.TabIndex = 48;
+            this.Precio_producto30.Text = "$9.000";
+            // 
+            // Btn_Añadir30
+            // 
+            this.Btn_Añadir30.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir30.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir30.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir30.Location = new System.Drawing.Point(292, 538);
+            this.Btn_Añadir30.Name = "Btn_Añadir30";
+            this.Btn_Añadir30.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir30.TabIndex = 47;
+            this.Btn_Añadir30.Text = "Añadir al Carrito";
+            this.Btn_Añadir30.UseVisualStyleBackColor = false;
+            this.Btn_Añadir30.Click += new System.EventHandler(this.Btn_Añadir30_Click);
+            // 
+            // Imagen_producto30
+            // 
+            this.Imagen_producto30.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto30.Image")));
+            this.Imagen_producto30.Location = new System.Drawing.Point(292, 293);
+            this.Imagen_producto30.Name = "Imagen_producto30";
+            this.Imagen_producto30.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto30.TabIndex = 46;
+            this.Imagen_producto30.TabStop = false;
+            // 
+            // Nombre_producto29
+            // 
+            this.Nombre_producto29.AutoSize = true;
+            this.Nombre_producto29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto29.Location = new System.Drawing.Point(48, 474);
+            this.Nombre_producto29.Name = "Nombre_producto29";
+            this.Nombre_producto29.Size = new System.Drawing.Size(81, 24);
+            this.Nombre_producto29.TabIndex = 45;
+            this.Nombre_producto29.Text = "Losartán";
+            // 
+            // Precio_producto29
+            // 
+            this.Precio_producto29.AutoSize = true;
+            this.Precio_producto29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto29.Location = new System.Drawing.Point(124, 508);
+            this.Precio_producto29.Name = "Precio_producto29";
+            this.Precio_producto29.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto29.TabIndex = 44;
+            this.Precio_producto29.Text = "$6.000";
+            // 
+            // Btn_Añadir29
+            // 
+            this.Btn_Añadir29.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir29.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir29.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir29.Location = new System.Drawing.Point(45, 538);
+            this.Btn_Añadir29.Name = "Btn_Añadir29";
+            this.Btn_Añadir29.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir29.TabIndex = 43;
+            this.Btn_Añadir29.Text = "Añadir al Carrito";
+            this.Btn_Añadir29.UseVisualStyleBackColor = false;
+            this.Btn_Añadir29.Click += new System.EventHandler(this.Btn_Añadir29_Click);
+            // 
+            // Imagen_producto29
+            // 
+            this.Imagen_producto29.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto29.Image")));
+            this.Imagen_producto29.Location = new System.Drawing.Point(45, 293);
+            this.Imagen_producto29.Name = "Imagen_producto29";
+            this.Imagen_producto29.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto29.TabIndex = 42;
+            this.Imagen_producto29.TabStop = false;
+            // 
+            // Nombre_producto28
+            // 
+            this.Nombre_producto28.AutoSize = true;
+            this.Nombre_producto28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto28.Location = new System.Drawing.Point(784, 185);
+            this.Nombre_producto28.Name = "Nombre_producto28";
+            this.Nombre_producto28.Size = new System.Drawing.Size(106, 24);
+            this.Nombre_producto28.TabIndex = 41;
+            this.Nombre_producto28.Text = "Genoplasol";
+            // 
+            // Precio_producto28
+            // 
+            this.Precio_producto28.AutoSize = true;
+            this.Precio_producto28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto28.Location = new System.Drawing.Point(867, 219);
+            this.Precio_producto28.Name = "Precio_producto28";
+            this.Precio_producto28.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto28.TabIndex = 40;
+            this.Precio_producto28.Text = "$16.000";
+            // 
+            // Btn_Añadir28
+            // 
+            this.Btn_Añadir28.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir28.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir28.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir28.Location = new System.Drawing.Point(781, 249);
+            this.Btn_Añadir28.Name = "Btn_Añadir28";
+            this.Btn_Añadir28.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir28.TabIndex = 39;
+            this.Btn_Añadir28.Text = "Añadir al Carrito";
+            this.Btn_Añadir28.UseVisualStyleBackColor = false;
+            this.Btn_Añadir28.Click += new System.EventHandler(this.Btn_Añadir28_Click);
+            // 
+            // Nombre_producto27
+            // 
+            this.Nombre_producto27.AutoSize = true;
+            this.Nombre_producto27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto27.Location = new System.Drawing.Point(547, 185);
+            this.Nombre_producto27.Name = "Nombre_producto27";
+            this.Nombre_producto27.Size = new System.Drawing.Size(90, 24);
+            this.Nombre_producto27.TabIndex = 38;
+            this.Nombre_producto27.Text = "Mieltertos";
+            // 
+            // Precio_producto27
+            // 
+            this.Precio_producto27.AutoSize = true;
+            this.Precio_producto27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto27.Location = new System.Drawing.Point(619, 219);
+            this.Precio_producto27.Name = "Precio_producto27";
+            this.Precio_producto27.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto27.TabIndex = 37;
+            this.Precio_producto27.Text = "$28.000";
+            // 
+            // Btn_Añadir27
+            // 
+            this.Btn_Añadir27.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir27.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir27.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir27.Location = new System.Drawing.Point(544, 249);
+            this.Btn_Añadir27.Name = "Btn_Añadir27";
+            this.Btn_Añadir27.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir27.TabIndex = 36;
+            this.Btn_Añadir27.Text = "Añadir al Carrito";
+            this.Btn_Añadir27.UseVisualStyleBackColor = false;
+            this.Btn_Añadir27.Click += new System.EventHandler(this.Btn_Añadir27_Click);
+            // 
+            // Nombre_producto26
+            // 
+            this.Nombre_producto26.AutoSize = true;
+            this.Nombre_producto26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto26.Location = new System.Drawing.Point(295, 185);
+            this.Nombre_producto26.Name = "Nombre_producto26";
+            this.Nombre_producto26.Size = new System.Drawing.Size(83, 24);
+            this.Nombre_producto26.TabIndex = 35;
+            this.Nombre_producto26.Text = "Imodium";
+            // 
+            // Precio_producto26
+            // 
+            this.Precio_producto26.AutoSize = true;
+            this.Precio_producto26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto26.Location = new System.Drawing.Point(364, 219);
+            this.Precio_producto26.Name = "Precio_producto26";
+            this.Precio_producto26.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto26.TabIndex = 34;
+            this.Precio_producto26.Text = "$16.200";
+            // 
+            // Btn_Añadir26
+            // 
+            this.Btn_Añadir26.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir26.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir26.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir26.Location = new System.Drawing.Point(292, 249);
+            this.Btn_Añadir26.Name = "Btn_Añadir26";
+            this.Btn_Añadir26.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir26.TabIndex = 33;
+            this.Btn_Añadir26.Text = "Añadir al Carrito";
+            this.Btn_Añadir26.UseVisualStyleBackColor = false;
+            this.Btn_Añadir26.Click += new System.EventHandler(this.Btn_Añadir26_Click);
+            // 
+            // Nombre_producto25
+            // 
+            this.Nombre_producto25.AutoSize = true;
+            this.Nombre_producto25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto25.Location = new System.Drawing.Point(48, 185);
+            this.Nombre_producto25.Name = "Nombre_producto25";
+            this.Nombre_producto25.Size = new System.Drawing.Size(180, 24);
+            this.Nombre_producto25.TabIndex = 32;
+            this.Nombre_producto25.Text = "Paracetamol Tablets";
+            this.Nombre_producto25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Precio_producto25
+            // 
+            this.Precio_producto25.AutoSize = true;
+            this.Precio_producto25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto25.Location = new System.Drawing.Point(116, 219);
+            this.Precio_producto25.Name = "Precio_producto25";
+            this.Precio_producto25.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto25.TabIndex = 31;
+            this.Precio_producto25.Text = "$8.500";
+            // 
+            // Imagen_producto28
+            // 
+            this.Imagen_producto28.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto28.Image")));
+            this.Imagen_producto28.Location = new System.Drawing.Point(781, 3);
+            this.Imagen_producto28.Name = "Imagen_producto28";
+            this.Imagen_producto28.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto28.TabIndex = 29;
+            this.Imagen_producto28.TabStop = false;
+            // 
+            // Imagen_producto27
+            // 
+            this.Imagen_producto27.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto27.Image")));
+            this.Imagen_producto27.Location = new System.Drawing.Point(544, 3);
+            this.Imagen_producto27.Name = "Imagen_producto27";
+            this.Imagen_producto27.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto27.TabIndex = 27;
+            this.Imagen_producto27.TabStop = false;
+            // 
+            // Imagen_producto26
+            // 
+            this.Imagen_producto26.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto26.Image")));
+            this.Imagen_producto26.Location = new System.Drawing.Point(292, 3);
+            this.Imagen_producto26.Name = "Imagen_producto26";
+            this.Imagen_producto26.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto26.TabIndex = 25;
+            this.Imagen_producto26.TabStop = false;
+            // 
+            // Btn_Añadir25
+            // 
+            this.Btn_Añadir25.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir25.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir25.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir25.Location = new System.Drawing.Point(45, 249);
+            this.Btn_Añadir25.Name = "Btn_Añadir25";
+            this.Btn_Añadir25.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir25.TabIndex = 24;
+            this.Btn_Añadir25.Text = "Añadir al Carrito";
+            this.Btn_Añadir25.UseVisualStyleBackColor = false;
+            this.Btn_Añadir25.Click += new System.EventHandler(this.Btn_Añadir25_Click);
+            // 
+            // Imagen_producto25
+            // 
+            this.Imagen_producto25.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto25.Image")));
+            this.Imagen_producto25.Location = new System.Drawing.Point(45, 4);
+            this.Imagen_producto25.Name = "Imagen_producto25";
+            this.Imagen_producto25.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto25.TabIndex = 11;
+            this.Imagen_producto25.TabStop = false;
+            // 
+            // Nombre_producto24
+            // 
+            this.Nombre_producto24.AutoSize = true;
+            this.Nombre_producto24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto24.Location = new System.Drawing.Point(784, 474);
+            this.Nombre_producto24.Name = "Nombre_producto24";
+            this.Nombre_producto24.Size = new System.Drawing.Size(98, 24);
+            this.Nombre_producto24.TabIndex = 57;
+            this.Nombre_producto24.Text = "Buscapina";
+            // 
+            // Precio_producto24
+            // 
+            this.Precio_producto24.AutoSize = true;
+            this.Precio_producto24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto24.Location = new System.Drawing.Point(859, 508);
+            this.Precio_producto24.Name = "Precio_producto24";
+            this.Precio_producto24.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto24.TabIndex = 56;
+            this.Precio_producto24.Text = "$13.500";
+            // 
+            // Btn_Añadir24
+            // 
+            this.Btn_Añadir24.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir24.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir24.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir24.Location = new System.Drawing.Point(781, 538);
+            this.Btn_Añadir24.Name = "Btn_Añadir24";
+            this.Btn_Añadir24.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir24.TabIndex = 55;
+            this.Btn_Añadir24.Text = "Añadir al Carrito";
+            this.Btn_Añadir24.UseVisualStyleBackColor = false;
+            this.Btn_Añadir24.Click += new System.EventHandler(this.Btn_Añadir24_Click);
+            // 
+            // Imagen_producto24
+            // 
+            this.Imagen_producto24.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto24.Image")));
+            this.Imagen_producto24.Location = new System.Drawing.Point(781, 293);
+            this.Imagen_producto24.Name = "Imagen_producto24";
+            this.Imagen_producto24.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto24.TabIndex = 54;
+            this.Imagen_producto24.TabStop = false;
+            // 
+            // Nombre_producto23
+            // 
+            this.Nombre_producto23.AutoSize = true;
+            this.Nombre_producto23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto23.Location = new System.Drawing.Point(547, 474);
+            this.Nombre_producto23.Name = "Nombre_producto23";
+            this.Nombre_producto23.Size = new System.Drawing.Size(135, 24);
+            this.Nombre_producto23.TabIndex = 53;
+            this.Nombre_producto23.Text = "Enterogermina";
+            // 
+            // Precio_producto23
+            // 
+            this.Precio_producto23.AutoSize = true;
+            this.Precio_producto23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto23.Location = new System.Drawing.Point(619, 508);
+            this.Precio_producto23.Name = "Precio_producto23";
+            this.Precio_producto23.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto23.TabIndex = 52;
+            this.Precio_producto23.Text = "$20.000";
+            // 
+            // Btn_Añadir23
+            // 
+            this.Btn_Añadir23.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir23.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir23.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir23.Location = new System.Drawing.Point(544, 538);
+            this.Btn_Añadir23.Name = "Btn_Añadir23";
+            this.Btn_Añadir23.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir23.TabIndex = 51;
+            this.Btn_Añadir23.Text = "Añadir al Carrito";
+            this.Btn_Añadir23.UseVisualStyleBackColor = false;
+            this.Btn_Añadir23.Click += new System.EventHandler(this.Btn_Añadir23_Click);
+            // 
+            // Imagen_producto23
+            // 
+            this.Imagen_producto23.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto23.Image")));
+            this.Imagen_producto23.Location = new System.Drawing.Point(544, 293);
+            this.Imagen_producto23.Name = "Imagen_producto23";
+            this.Imagen_producto23.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto23.TabIndex = 50;
+            this.Imagen_producto23.TabStop = false;
+            // 
+            // Nombre_producto22
+            // 
+            this.Nombre_producto22.AutoSize = true;
+            this.Nombre_producto22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto22.Location = new System.Drawing.Point(295, 474);
+            this.Nombre_producto22.Name = "Nombre_producto22";
+            this.Nombre_producto22.Size = new System.Drawing.Size(88, 24);
+            this.Nombre_producto22.TabIndex = 49;
+            this.Nombre_producto22.Text = "Redoxon";
+            // 
+            // Precio_producto22
+            // 
+            this.Precio_producto22.AutoSize = true;
+            this.Precio_producto22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto22.Location = new System.Drawing.Point(376, 508);
+            this.Precio_producto22.Name = "Precio_producto22";
+            this.Precio_producto22.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto22.TabIndex = 48;
+            this.Precio_producto22.Text = "$18.000";
+            // 
+            // Btn_Añadir22
+            // 
+            this.Btn_Añadir22.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir22.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir22.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir22.Location = new System.Drawing.Point(292, 538);
+            this.Btn_Añadir22.Name = "Btn_Añadir22";
+            this.Btn_Añadir22.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir22.TabIndex = 47;
+            this.Btn_Añadir22.Text = "Añadir al Carrito";
+            this.Btn_Añadir22.UseVisualStyleBackColor = false;
+            this.Btn_Añadir22.Click += new System.EventHandler(this.Btn_Añadir22_Click);
+            // 
+            // Imagen_producto22
+            // 
+            this.Imagen_producto22.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto22.Image")));
+            this.Imagen_producto22.Location = new System.Drawing.Point(292, 293);
+            this.Imagen_producto22.Name = "Imagen_producto22";
+            this.Imagen_producto22.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto22.TabIndex = 46;
+            this.Imagen_producto22.TabStop = false;
+            // 
+            // Nombre_producto21
+            // 
+            this.Nombre_producto21.AutoSize = true;
+            this.Nombre_producto21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto21.Location = new System.Drawing.Point(48, 474);
+            this.Nombre_producto21.Name = "Nombre_producto21";
+            this.Nombre_producto21.Size = new System.Drawing.Size(65, 24);
+            this.Nombre_producto21.TabIndex = 45;
+            this.Nombre_producto21.Text = "Rivotril";
+            // 
+            // Precio_producto21
+            // 
+            this.Precio_producto21.AutoSize = true;
+            this.Precio_producto21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto21.Location = new System.Drawing.Point(124, 508);
+            this.Precio_producto21.Name = "Precio_producto21";
+            this.Precio_producto21.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto21.TabIndex = 44;
+            this.Precio_producto21.Text = "$33.000";
+            // 
+            // Btn_Añadir21
+            // 
+            this.Btn_Añadir21.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir21.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir21.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir21.Location = new System.Drawing.Point(45, 538);
+            this.Btn_Añadir21.Name = "Btn_Añadir21";
+            this.Btn_Añadir21.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir21.TabIndex = 43;
+            this.Btn_Añadir21.Text = "Añadir al Carrito";
+            this.Btn_Añadir21.UseVisualStyleBackColor = false;
+            this.Btn_Añadir21.Click += new System.EventHandler(this.Btn_Añadir21_Click);
+            // 
+            // Imagen_producto21
+            // 
+            this.Imagen_producto21.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto21.Image")));
+            this.Imagen_producto21.Location = new System.Drawing.Point(45, 293);
+            this.Imagen_producto21.Name = "Imagen_producto21";
+            this.Imagen_producto21.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto21.TabIndex = 42;
+            this.Imagen_producto21.TabStop = false;
+            // 
+            // Nombre_producto20
+            // 
+            this.Nombre_producto20.AutoSize = true;
+            this.Nombre_producto20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto20.Location = new System.Drawing.Point(784, 185);
+            this.Nombre_producto20.Name = "Nombre_producto20";
+            this.Nombre_producto20.Size = new System.Drawing.Size(63, 24);
+            this.Nombre_producto20.TabIndex = 41;
+            this.Nombre_producto20.Text = "Neuro";
+            // 
+            // Precio_producto20
+            // 
+            this.Precio_producto20.AutoSize = true;
+            this.Precio_producto20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto20.Location = new System.Drawing.Point(867, 219);
+            this.Precio_producto20.Name = "Precio_producto20";
+            this.Precio_producto20.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto20.TabIndex = 40;
+            this.Precio_producto20.Text = "$74.000";
+            // 
+            // Btn_Añadir20
+            // 
+            this.Btn_Añadir20.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir20.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir20.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir20.Location = new System.Drawing.Point(781, 249);
+            this.Btn_Añadir20.Name = "Btn_Añadir20";
+            this.Btn_Añadir20.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir20.TabIndex = 39;
+            this.Btn_Añadir20.Text = "Añadir al Carrito";
+            this.Btn_Añadir20.UseVisualStyleBackColor = false;
+            this.Btn_Añadir20.Click += new System.EventHandler(this.Btn_Añadir20_Click);
+            // 
+            // Nombre_producto19
+            // 
+            this.Nombre_producto19.AutoSize = true;
+            this.Nombre_producto19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto19.Location = new System.Drawing.Point(547, 185);
+            this.Nombre_producto19.Name = "Nombre_producto19";
+            this.Nombre_producto19.Size = new System.Drawing.Size(107, 24);
+            this.Nombre_producto19.TabIndex = 38;
+            this.Nombre_producto19.Text = "Amoxicilina";
+            // 
+            // Precio_producto19
+            // 
+            this.Precio_producto19.AutoSize = true;
+            this.Precio_producto19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto19.Location = new System.Drawing.Point(619, 219);
+            this.Precio_producto19.Name = "Precio_producto19";
+            this.Precio_producto19.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto19.TabIndex = 37;
+            this.Precio_producto19.Text = "$8.000";
+            // 
+            // Btn_Añadir19
+            // 
+            this.Btn_Añadir19.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir19.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir19.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir19.Location = new System.Drawing.Point(544, 249);
+            this.Btn_Añadir19.Name = "Btn_Añadir19";
+            this.Btn_Añadir19.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir19.TabIndex = 36;
+            this.Btn_Añadir19.Text = "Añadir al Carrito";
+            this.Btn_Añadir19.UseVisualStyleBackColor = false;
+            this.Btn_Añadir19.Click += new System.EventHandler(this.Btn_Añadir19_Click);
+            // 
+            // Nombre_producto18
+            // 
+            this.Nombre_producto18.AutoSize = true;
+            this.Nombre_producto18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto18.Location = new System.Drawing.Point(295, 185);
+            this.Nombre_producto18.Name = "Nombre_producto18";
+            this.Nombre_producto18.Size = new System.Drawing.Size(83, 24);
+            this.Nombre_producto18.TabIndex = 35;
+            this.Nombre_producto18.Text = "Cetrizine";
+            // 
+            // Precio_producto18
+            // 
+            this.Precio_producto18.AutoSize = true;
+            this.Precio_producto18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto18.Location = new System.Drawing.Point(364, 219);
+            this.Precio_producto18.Name = "Precio_producto18";
+            this.Precio_producto18.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto18.TabIndex = 34;
+            this.Precio_producto18.Text = "$24.000";
+            // 
+            // Btn_Añadir18
+            // 
+            this.Btn_Añadir18.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir18.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir18.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir18.Location = new System.Drawing.Point(292, 249);
+            this.Btn_Añadir18.Name = "Btn_Añadir18";
+            this.Btn_Añadir18.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir18.TabIndex = 33;
+            this.Btn_Añadir18.Text = "Añadir al Carrito";
+            this.Btn_Añadir18.UseVisualStyleBackColor = false;
+            this.Btn_Añadir18.Click += new System.EventHandler(this.Btn_Añadir18_Click);
+            // 
+            // Nombre_producto17
+            // 
+            this.Nombre_producto17.AutoSize = true;
+            this.Nombre_producto17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto17.Location = new System.Drawing.Point(48, 185);
+            this.Nombre_producto17.Name = "Nombre_producto17";
+            this.Nombre_producto17.Size = new System.Drawing.Size(154, 24);
+            this.Nombre_producto17.TabIndex = 32;
+            this.Nombre_producto17.Text = "Condones Durex";
+            this.Nombre_producto17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Precio_producto17
+            // 
+            this.Precio_producto17.AutoSize = true;
+            this.Precio_producto17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto17.Location = new System.Drawing.Point(116, 219);
+            this.Precio_producto17.Name = "Precio_producto17";
+            this.Precio_producto17.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto17.TabIndex = 31;
+            this.Precio_producto17.Text = "$10.000";
+            // 
+            // Imagen_producto20
+            // 
+            this.Imagen_producto20.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto20.Image")));
+            this.Imagen_producto20.Location = new System.Drawing.Point(781, 3);
+            this.Imagen_producto20.Name = "Imagen_producto20";
+            this.Imagen_producto20.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto20.TabIndex = 29;
+            this.Imagen_producto20.TabStop = false;
+            // 
+            // Imagen_producto19
+            // 
+            this.Imagen_producto19.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto19.Image")));
+            this.Imagen_producto19.Location = new System.Drawing.Point(544, 3);
+            this.Imagen_producto19.Name = "Imagen_producto19";
+            this.Imagen_producto19.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto19.TabIndex = 27;
+            this.Imagen_producto19.TabStop = false;
+            // 
+            // Imagen_producto18
+            // 
+            this.Imagen_producto18.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto18.Image")));
+            this.Imagen_producto18.Location = new System.Drawing.Point(292, 3);
+            this.Imagen_producto18.Name = "Imagen_producto18";
+            this.Imagen_producto18.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto18.TabIndex = 25;
+            this.Imagen_producto18.TabStop = false;
+            // 
+            // Btn_Añadir17
+            // 
+            this.Btn_Añadir17.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir17.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir17.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir17.Location = new System.Drawing.Point(45, 249);
+            this.Btn_Añadir17.Name = "Btn_Añadir17";
+            this.Btn_Añadir17.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir17.TabIndex = 24;
+            this.Btn_Añadir17.Text = "Añadir al Carrito";
+            this.Btn_Añadir17.UseVisualStyleBackColor = false;
+            this.Btn_Añadir17.Click += new System.EventHandler(this.Btn_Añadir17_Click);
+            // 
+            // Imagen_producto17
+            // 
+            this.Imagen_producto17.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto17.Image")));
+            this.Imagen_producto17.Location = new System.Drawing.Point(45, 4);
+            this.Imagen_producto17.Name = "Imagen_producto17";
+            this.Imagen_producto17.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto17.TabIndex = 11;
+            this.Imagen_producto17.TabStop = false;
+            // 
+            // Nombre_producto16
+            // 
+            this.Nombre_producto16.AutoSize = true;
+            this.Nombre_producto16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto16.Location = new System.Drawing.Point(784, 474);
+            this.Nombre_producto16.Name = "Nombre_producto16";
+            this.Nombre_producto16.Size = new System.Drawing.Size(80, 24);
+            this.Nombre_producto16.TabIndex = 57;
+            this.Nombre_producto16.Text = "Dimenol";
+            // 
+            // Precio_producto16
+            // 
+            this.Precio_producto16.AutoSize = true;
+            this.Precio_producto16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto16.Location = new System.Drawing.Point(859, 508);
+            this.Precio_producto16.Name = "Precio_producto16";
+            this.Precio_producto16.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto16.TabIndex = 56;
+            this.Precio_producto16.Text = "$18.500";
+            // 
+            // Btn_Añadir16
+            // 
+            this.Btn_Añadir16.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir16.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir16.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir16.Location = new System.Drawing.Point(781, 538);
+            this.Btn_Añadir16.Name = "Btn_Añadir16";
+            this.Btn_Añadir16.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir16.TabIndex = 55;
+            this.Btn_Añadir16.Text = "Añadir al Carrito";
+            this.Btn_Añadir16.UseVisualStyleBackColor = false;
+            this.Btn_Añadir16.Click += new System.EventHandler(this.Btn_Añadir16_Click);
+            // 
+            // Imagen_producto16
+            // 
+            this.Imagen_producto16.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto16.Image")));
+            this.Imagen_producto16.Location = new System.Drawing.Point(781, 293);
+            this.Imagen_producto16.Name = "Imagen_producto16";
+            this.Imagen_producto16.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto16.TabIndex = 54;
+            this.Imagen_producto16.TabStop = false;
+            // 
+            // Nombre_producto15
+            // 
+            this.Nombre_producto15.AutoSize = true;
+            this.Nombre_producto15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto15.Location = new System.Drawing.Point(547, 474);
+            this.Nombre_producto15.Name = "Nombre_producto15";
+            this.Nombre_producto15.Size = new System.Drawing.Size(213, 24);
+            this.Nombre_producto15.TabIndex = 53;
+            this.Nombre_producto15.Text = "Tamsulosina Clorhidrate";
+            // 
+            // Precio_producto15
+            // 
+            this.Precio_producto15.AutoSize = true;
+            this.Precio_producto15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto15.Location = new System.Drawing.Point(619, 508);
+            this.Precio_producto15.Name = "Precio_producto15";
+            this.Precio_producto15.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto15.TabIndex = 52;
+            this.Precio_producto15.Text = "$10.000";
+            // 
+            // Btn_Añadir15
+            // 
+            this.Btn_Añadir15.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir15.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir15.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir15.Location = new System.Drawing.Point(544, 538);
+            this.Btn_Añadir15.Name = "Btn_Añadir15";
+            this.Btn_Añadir15.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir15.TabIndex = 51;
+            this.Btn_Añadir15.Text = "Añadir al Carrito";
+            this.Btn_Añadir15.UseVisualStyleBackColor = false;
+            this.Btn_Añadir15.Click += new System.EventHandler(this.Btn_Añadir15_Click);
+            // 
+            // Imagen_producto15
+            // 
+            this.Imagen_producto15.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto15.Image")));
+            this.Imagen_producto15.Location = new System.Drawing.Point(544, 293);
+            this.Imagen_producto15.Name = "Imagen_producto15";
+            this.Imagen_producto15.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto15.TabIndex = 50;
+            this.Imagen_producto15.TabStop = false;
+            // 
+            // Nombre_producto14
+            // 
+            this.Nombre_producto14.AutoSize = true;
+            this.Nombre_producto14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto14.Location = new System.Drawing.Point(295, 474);
+            this.Nombre_producto14.Name = "Nombre_producto14";
+            this.Nombre_producto14.Size = new System.Drawing.Size(81, 24);
+            this.Nombre_producto14.TabIndex = 49;
+            this.Nombre_producto14.Text = "Electrolit";
+            // 
+            // Precio_producto14
+            // 
+            this.Precio_producto14.AutoSize = true;
+            this.Precio_producto14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto14.Location = new System.Drawing.Point(376, 508);
+            this.Precio_producto14.Name = "Precio_producto14";
+            this.Precio_producto14.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto14.TabIndex = 48;
+            this.Precio_producto14.Text = "$8.000";
+            // 
+            // Btn_Añadir14
+            // 
+            this.Btn_Añadir14.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir14.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir14.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir14.Location = new System.Drawing.Point(292, 538);
+            this.Btn_Añadir14.Name = "Btn_Añadir14";
+            this.Btn_Añadir14.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir14.TabIndex = 47;
+            this.Btn_Añadir14.Text = "Añadir al Carrito";
+            this.Btn_Añadir14.UseVisualStyleBackColor = false;
+            this.Btn_Añadir14.Click += new System.EventHandler(this.Btn_Añadir14_Click);
+            // 
+            // Imagen_producto14
+            // 
+            this.Imagen_producto14.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto14.Image")));
+            this.Imagen_producto14.Location = new System.Drawing.Point(292, 293);
+            this.Imagen_producto14.Name = "Imagen_producto14";
+            this.Imagen_producto14.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto14.TabIndex = 46;
+            this.Imagen_producto14.TabStop = false;
+            // 
+            // Nombre_producto13
+            // 
+            this.Nombre_producto13.AutoSize = true;
+            this.Nombre_producto13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto13.Location = new System.Drawing.Point(48, 474);
+            this.Nombre_producto13.Name = "Nombre_producto13";
+            this.Nombre_producto13.Size = new System.Drawing.Size(114, 24);
+            this.Nombre_producto13.TabIndex = 45;
+            this.Nombre_producto13.Text = "Glucophage";
+            // 
+            // Precio_producto13
+            // 
+            this.Precio_producto13.AutoSize = true;
+            this.Precio_producto13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto13.Location = new System.Drawing.Point(124, 508);
+            this.Precio_producto13.Name = "Precio_producto13";
+            this.Precio_producto13.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto13.TabIndex = 44;
+            this.Precio_producto13.Text = "$7.000";
+            // 
+            // Btn_Añadir13
+            // 
+            this.Btn_Añadir13.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir13.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir13.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir13.Location = new System.Drawing.Point(45, 538);
+            this.Btn_Añadir13.Name = "Btn_Añadir13";
+            this.Btn_Añadir13.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir13.TabIndex = 43;
+            this.Btn_Añadir13.Text = "Añadir al Carrito";
+            this.Btn_Añadir13.UseVisualStyleBackColor = false;
+            this.Btn_Añadir13.Click += new System.EventHandler(this.Btn_Añadir13_Click);
+            // 
+            // Imagen_producto13
+            // 
+            this.Imagen_producto13.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto13.Image")));
+            this.Imagen_producto13.Location = new System.Drawing.Point(45, 293);
+            this.Imagen_producto13.Name = "Imagen_producto13";
+            this.Imagen_producto13.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto13.TabIndex = 42;
+            this.Imagen_producto13.TabStop = false;
+            // 
+            // Nombre_producto12
+            // 
+            this.Nombre_producto12.AutoSize = true;
+            this.Nombre_producto12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto12.Location = new System.Drawing.Point(784, 185);
+            this.Nombre_producto12.Name = "Nombre_producto12";
+            this.Nombre_producto12.Size = new System.Drawing.Size(60, 24);
+            this.Nombre_producto12.TabIndex = 41;
+            this.Nombre_producto12.Text = "Andol";
+            // 
+            // Precio_producto12
+            // 
+            this.Precio_producto12.AutoSize = true;
+            this.Precio_producto12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto12.Location = new System.Drawing.Point(867, 219);
+            this.Precio_producto12.Name = "Precio_producto12";
+            this.Precio_producto12.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto12.TabIndex = 40;
+            this.Precio_producto12.Text = "$14.000";
+            // 
+            // Btn_Añadir12
+            // 
+            this.Btn_Añadir12.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir12.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir12.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir12.Location = new System.Drawing.Point(781, 249);
+            this.Btn_Añadir12.Name = "Btn_Añadir12";
+            this.Btn_Añadir12.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir12.TabIndex = 39;
+            this.Btn_Añadir12.Text = "Añadir al Carrito";
+            this.Btn_Añadir12.UseVisualStyleBackColor = false;
+            this.Btn_Añadir12.Click += new System.EventHandler(this.Btn_Añadir12_Click);
+            // 
+            // Nombre_producto11
+            // 
+            this.Nombre_producto11.AutoSize = true;
+            this.Nombre_producto11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto11.Location = new System.Drawing.Point(547, 185);
+            this.Nombre_producto11.Name = "Nombre_producto11";
+            this.Nombre_producto11.Size = new System.Drawing.Size(105, 24);
+            this.Nombre_producto11.TabIndex = 38;
+            this.Nombre_producto11.Text = "Biodramina";
+            // 
+            // Precio_producto11
+            // 
+            this.Precio_producto11.AutoSize = true;
+            this.Precio_producto11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto11.Location = new System.Drawing.Point(619, 219);
+            this.Precio_producto11.Name = "Precio_producto11";
+            this.Precio_producto11.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto11.TabIndex = 37;
+            this.Precio_producto11.Text = "$13.000";
+            // 
+            // Btn_Añadir11
+            // 
+            this.Btn_Añadir11.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir11.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir11.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir11.Location = new System.Drawing.Point(544, 249);
+            this.Btn_Añadir11.Name = "Btn_Añadir11";
+            this.Btn_Añadir11.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir11.TabIndex = 36;
+            this.Btn_Añadir11.Text = "Añadir al Carrito";
+            this.Btn_Añadir11.UseVisualStyleBackColor = false;
+            this.Btn_Añadir11.Click += new System.EventHandler(this.Btn_Añadir11_Click);
+            // 
+            // Nombre_producto10
+            // 
+            this.Nombre_producto10.AutoSize = true;
+            this.Nombre_producto10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto10.Location = new System.Drawing.Point(295, 185);
+            this.Nombre_producto10.Name = "Nombre_producto10";
+            this.Nombre_producto10.Size = new System.Drawing.Size(79, 24);
+            this.Nombre_producto10.TabIndex = 35;
+            this.Nombre_producto10.Text = "Ventonil";
+            // 
+            // Precio_producto10
+            // 
+            this.Precio_producto10.AutoSize = true;
+            this.Precio_producto10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto10.Location = new System.Drawing.Point(364, 219);
+            this.Precio_producto10.Name = "Precio_producto10";
+            this.Precio_producto10.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto10.TabIndex = 34;
+            this.Precio_producto10.Text = "$42.000";
+            // 
+            // Btn_Añadir10
+            // 
+            this.Btn_Añadir10.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir10.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir10.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir10.Location = new System.Drawing.Point(292, 249);
+            this.Btn_Añadir10.Name = "Btn_Añadir10";
+            this.Btn_Añadir10.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir10.TabIndex = 33;
+            this.Btn_Añadir10.Text = "Añadir al Carrito";
+            this.Btn_Añadir10.UseVisualStyleBackColor = false;
+            this.Btn_Añadir10.Click += new System.EventHandler(this.Btn_Añadir10_Click);
+            // 
+            // Nombre_producto9
+            // 
+            this.Nombre_producto9.AutoSize = true;
+            this.Nombre_producto9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_producto9.Location = new System.Drawing.Point(48, 185);
+            this.Nombre_producto9.Name = "Nombre_producto9";
+            this.Nombre_producto9.Size = new System.Drawing.Size(109, 24);
+            this.Nombre_producto9.TabIndex = 32;
+            this.Nombre_producto9.Text = "Diclofenaco";
+            this.Nombre_producto9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Precio_producto9
+            // 
+            this.Precio_producto9.AutoSize = true;
+            this.Precio_producto9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_producto9.Location = new System.Drawing.Point(116, 219);
+            this.Precio_producto9.Name = "Precio_producto9";
+            this.Precio_producto9.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto9.TabIndex = 31;
+            this.Precio_producto9.Text = "$12.000";
+            // 
+            // Imagen_producto12
+            // 
+            this.Imagen_producto12.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto12.Image")));
+            this.Imagen_producto12.Location = new System.Drawing.Point(781, 3);
+            this.Imagen_producto12.Name = "Imagen_producto12";
+            this.Imagen_producto12.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto12.TabIndex = 29;
+            this.Imagen_producto12.TabStop = false;
+            // 
+            // Imagen_producto11
+            // 
+            this.Imagen_producto11.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto11.Image")));
+            this.Imagen_producto11.Location = new System.Drawing.Point(544, 3);
+            this.Imagen_producto11.Name = "Imagen_producto11";
+            this.Imagen_producto11.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto11.TabIndex = 27;
+            this.Imagen_producto11.TabStop = false;
+            // 
+            // Imagen_producto10
+            // 
+            this.Imagen_producto10.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto10.Image")));
+            this.Imagen_producto10.Location = new System.Drawing.Point(292, 3);
+            this.Imagen_producto10.Name = "Imagen_producto10";
+            this.Imagen_producto10.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto10.TabIndex = 25;
+            this.Imagen_producto10.TabStop = false;
+            // 
+            // Btn_Añadir9
+            // 
+            this.Btn_Añadir9.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir9.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir9.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir9.Location = new System.Drawing.Point(45, 249);
+            this.Btn_Añadir9.Name = "Btn_Añadir9";
+            this.Btn_Añadir9.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir9.TabIndex = 24;
+            this.Btn_Añadir9.Text = "Añadir al Carrito";
+            this.Btn_Añadir9.UseVisualStyleBackColor = false;
+            this.Btn_Añadir9.Click += new System.EventHandler(this.Btn_Añadir9_Click);
+            // 
+            // Imagen_producto9
+            // 
+            this.Imagen_producto9.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto9.Image")));
+            this.Imagen_producto9.Location = new System.Drawing.Point(45, 4);
+            this.Imagen_producto9.Name = "Imagen_producto9";
+            this.Imagen_producto9.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto9.TabIndex = 11;
+            this.Imagen_producto9.TabStop = false;
+            // 
+            // N_Producto8
+            // 
+            this.N_Producto8.AutoSize = true;
+            this.N_Producto8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Producto8.Location = new System.Drawing.Point(784, 474);
+            this.N_Producto8.Name = "N_Producto8";
+            this.N_Producto8.Size = new System.Drawing.Size(109, 24);
+            this.N_Producto8.TabIndex = 57;
+            this.N_Producto8.Text = "Pantoprazol";
+            // 
+            // Precio_Producto8
+            // 
+            this.Precio_Producto8.AutoSize = true;
+            this.Precio_Producto8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_Producto8.Location = new System.Drawing.Point(859, 508);
+            this.Precio_Producto8.Name = "Precio_Producto8";
+            this.Precio_Producto8.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto8.TabIndex = 56;
+            this.Precio_Producto8.Text = "$14.500";
+            // 
+            // Btn_Añadir8
+            // 
+            this.Btn_Añadir8.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir8.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir8.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir8.Location = new System.Drawing.Point(781, 538);
+            this.Btn_Añadir8.Name = "Btn_Añadir8";
+            this.Btn_Añadir8.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir8.TabIndex = 55;
+            this.Btn_Añadir8.Text = "Añadir al Carrito";
+            this.Btn_Añadir8.UseVisualStyleBackColor = false;
+            this.Btn_Añadir8.Click += new System.EventHandler(this.Btn_Añadir8_Click);
+            // 
+            // Imagen_producto8
+            // 
+            this.Imagen_producto8.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto8.Image")));
+            this.Imagen_producto8.Location = new System.Drawing.Point(781, 293);
+            this.Imagen_producto8.Name = "Imagen_producto8";
+            this.Imagen_producto8.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto8.TabIndex = 54;
+            this.Imagen_producto8.TabStop = false;
+            // 
+            // N_Producto7
+            // 
+            this.N_Producto7.AutoSize = true;
+            this.N_Producto7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Producto7.Location = new System.Drawing.Point(547, 474);
+            this.N_Producto7.Name = "N_Producto7";
+            this.N_Producto7.Size = new System.Drawing.Size(150, 24);
+            this.N_Producto7.TabIndex = 53;
+            this.N_Producto7.Text = "Hidroclorotiazida";
+            // 
+            // Precio_Producto7
+            // 
+            this.Precio_Producto7.AutoSize = true;
+            this.Precio_Producto7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_Producto7.Location = new System.Drawing.Point(619, 508);
+            this.Precio_Producto7.Name = "Precio_Producto7";
+            this.Precio_Producto7.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto7.TabIndex = 52;
+            this.Precio_Producto7.Text = "$10.000";
+            // 
+            // Btn_Añadir7
+            // 
+            this.Btn_Añadir7.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir7.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir7.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir7.Location = new System.Drawing.Point(544, 538);
+            this.Btn_Añadir7.Name = "Btn_Añadir7";
+            this.Btn_Añadir7.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir7.TabIndex = 51;
+            this.Btn_Añadir7.Text = "Añadir al Carrito";
+            this.Btn_Añadir7.UseVisualStyleBackColor = false;
+            this.Btn_Añadir7.Click += new System.EventHandler(this.Btn_Añadir7_Click);
+            // 
+            // Imagen_producto7
+            // 
+            this.Imagen_producto7.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto7.Image")));
+            this.Imagen_producto7.Location = new System.Drawing.Point(544, 293);
+            this.Imagen_producto7.Name = "Imagen_producto7";
+            this.Imagen_producto7.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto7.TabIndex = 50;
+            this.Imagen_producto7.TabStop = false;
+            // 
+            // N_Producto6
+            // 
+            this.N_Producto6.AutoSize = true;
+            this.N_Producto6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Producto6.Location = new System.Drawing.Point(295, 474);
+            this.N_Producto6.Name = "N_Producto6";
+            this.N_Producto6.Size = new System.Drawing.Size(121, 24);
+            this.N_Producto6.TabIndex = 49;
+            this.N_Producto6.Text = "Fluviral Noire";
+            // 
+            // Precio_Producto6
+            // 
+            this.Precio_Producto6.AutoSize = true;
+            this.Precio_Producto6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_Producto6.Location = new System.Drawing.Point(376, 508);
+            this.Precio_Producto6.Name = "Precio_Producto6";
+            this.Precio_Producto6.Size = new System.Drawing.Size(52, 18);
+            this.Precio_Producto6.TabIndex = 48;
+            this.Precio_Producto6.Text = "$4.000";
+            // 
+            // Btn_Añadir6
+            // 
+            this.Btn_Añadir6.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir6.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir6.Location = new System.Drawing.Point(292, 538);
+            this.Btn_Añadir6.Name = "Btn_Añadir6";
+            this.Btn_Añadir6.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir6.TabIndex = 47;
+            this.Btn_Añadir6.Text = "Añadir al Carrito";
+            this.Btn_Añadir6.UseVisualStyleBackColor = false;
+            this.Btn_Añadir6.Click += new System.EventHandler(this.Btn_Añadir6_Click);
+            // 
+            // Imagen_producto6
+            // 
+            this.Imagen_producto6.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto6.Image")));
+            this.Imagen_producto6.Location = new System.Drawing.Point(292, 293);
+            this.Imagen_producto6.Name = "Imagen_producto6";
+            this.Imagen_producto6.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto6.TabIndex = 46;
+            this.Imagen_producto6.TabStop = false;
+            // 
+            // N_Producto5
+            // 
+            this.N_Producto5.AutoSize = true;
+            this.N_Producto5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Producto5.Location = new System.Drawing.Point(48, 474);
+            this.N_Producto5.Name = "N_Producto5";
+            this.N_Producto5.Size = new System.Drawing.Size(59, 24);
+            this.N_Producto5.TabIndex = 45;
+            this.N_Producto5.Text = "Dolex";
+            // 
+            // Precio_Producto5
+            // 
+            this.Precio_Producto5.AutoSize = true;
+            this.Precio_Producto5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_Producto5.Location = new System.Drawing.Point(124, 508);
+            this.Precio_Producto5.Name = "Precio_Producto5";
+            this.Precio_Producto5.Size = new System.Drawing.Size(52, 18);
+            this.Precio_Producto5.TabIndex = 44;
+            this.Precio_Producto5.Text = "$9.000";
+            // 
+            // Btn_Añadir5
+            // 
+            this.Btn_Añadir5.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir5.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir5.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir5.Location = new System.Drawing.Point(45, 538);
+            this.Btn_Añadir5.Name = "Btn_Añadir5";
+            this.Btn_Añadir5.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir5.TabIndex = 43;
+            this.Btn_Añadir5.Text = "Añadir al Carrito";
+            this.Btn_Añadir5.UseVisualStyleBackColor = false;
+            this.Btn_Añadir5.Click += new System.EventHandler(this.Btn_Añadir5_Click);
+            // 
+            // Imagen_producto5
+            // 
+            this.Imagen_producto5.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto5.Image")));
+            this.Imagen_producto5.Location = new System.Drawing.Point(45, 293);
+            this.Imagen_producto5.Name = "Imagen_producto5";
+            this.Imagen_producto5.Size = new System.Drawing.Size(208, 178);
+            this.Imagen_producto5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto5.TabIndex = 42;
+            this.Imagen_producto5.TabStop = false;
+            // 
+            // N_Producto4
+            // 
+            this.N_Producto4.AutoSize = true;
+            this.N_Producto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Producto4.Location = new System.Drawing.Point(784, 185);
+            this.N_Producto4.Name = "N_Producto4";
+            this.N_Producto4.Size = new System.Drawing.Size(64, 24);
+            this.N_Producto4.TabIndex = 41;
+            this.N_Producto4.Text = "Viagra";
+            // 
+            // Precio_Producto4
+            // 
+            this.Precio_Producto4.AutoSize = true;
+            this.Precio_Producto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_Producto4.Location = new System.Drawing.Point(867, 219);
+            this.Precio_Producto4.Name = "Precio_Producto4";
+            this.Precio_Producto4.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto4.TabIndex = 40;
+            this.Precio_Producto4.Text = "$12.000";
+            // 
+            // Btn_Añadir4
+            // 
+            this.Btn_Añadir4.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir4.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir4.Location = new System.Drawing.Point(781, 249);
+            this.Btn_Añadir4.Name = "Btn_Añadir4";
+            this.Btn_Añadir4.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir4.TabIndex = 39;
+            this.Btn_Añadir4.Text = "Añadir al Carrito";
+            this.Btn_Añadir4.UseVisualStyleBackColor = false;
+            this.Btn_Añadir4.Click += new System.EventHandler(this.Btn_Añadir4_Click);
+            // 
+            // N_Producto3
+            // 
+            this.N_Producto3.AutoSize = true;
+            this.N_Producto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Producto3.Location = new System.Drawing.Point(547, 185);
+            this.N_Producto3.Name = "N_Producto3";
+            this.N_Producto3.Size = new System.Drawing.Size(105, 24);
+            this.N_Producto3.TabIndex = 38;
+            this.N_Producto3.Text = "Biodramina";
+            // 
+            // Precio_Producto3
+            // 
+            this.Precio_Producto3.AutoSize = true;
+            this.Precio_Producto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_Producto3.Location = new System.Drawing.Point(619, 219);
+            this.Precio_Producto3.Name = "Precio_Producto3";
+            this.Precio_Producto3.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto3.TabIndex = 37;
+            this.Precio_Producto3.Text = "$25.000";
+            // 
+            // Btn_Añadir3
+            // 
+            this.Btn_Añadir3.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir3.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir3.Location = new System.Drawing.Point(544, 249);
+            this.Btn_Añadir3.Name = "Btn_Añadir3";
+            this.Btn_Añadir3.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir3.TabIndex = 36;
+            this.Btn_Añadir3.Text = "Añadir al Carrito";
+            this.Btn_Añadir3.UseVisualStyleBackColor = false;
+            this.Btn_Añadir3.Click += new System.EventHandler(this.Btn_Añadir3_Click);
+            // 
+            // N_Producto2
+            // 
+            this.N_Producto2.AutoSize = true;
+            this.N_Producto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Producto2.Location = new System.Drawing.Point(295, 185);
+            this.N_Producto2.Name = "N_Producto2";
+            this.N_Producto2.Size = new System.Drawing.Size(59, 24);
+            this.N_Producto2.TabIndex = 35;
+            this.N_Producto2.Text = "Fluvis";
+            // 
+            // Precio_Producto2
+            // 
+            this.Precio_Producto2.AutoSize = true;
+            this.Precio_Producto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_Producto2.Location = new System.Drawing.Point(364, 219);
+            this.Precio_Producto2.Name = "Precio_Producto2";
+            this.Precio_Producto2.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto2.TabIndex = 34;
+            this.Precio_Producto2.Text = "$35.000";
+            // 
+            // Btn_Añadir2
+            // 
+            this.Btn_Añadir2.BackColor = System.Drawing.Color.Black;
+            this.Btn_Añadir2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Añadir2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Añadir2.ForeColor = System.Drawing.Color.White;
+            this.Btn_Añadir2.Location = new System.Drawing.Point(292, 249);
+            this.Btn_Añadir2.Name = "Btn_Añadir2";
+            this.Btn_Añadir2.Size = new System.Drawing.Size(208, 38);
+            this.Btn_Añadir2.TabIndex = 33;
+            this.Btn_Añadir2.Text = "Añadir al Carrito";
+            this.Btn_Añadir2.UseVisualStyleBackColor = false;
+            this.Btn_Añadir2.Click += new System.EventHandler(this.Btn_Añadir2_Click);
+            // 
+            // N_Producto1
+            // 
+            this.N_Producto1.AutoSize = true;
+            this.N_Producto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Producto1.Location = new System.Drawing.Point(48, 185);
+            this.N_Producto1.Name = "N_Producto1";
+            this.N_Producto1.Size = new System.Drawing.Size(80, 24);
+            this.N_Producto1.TabIndex = 32;
+            this.N_Producto1.Text = "Simepar";
+            // 
+            // Precio_Producto1
+            // 
+            this.Precio_Producto1.AutoSize = true;
+            this.Precio_Producto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Precio_Producto1.Location = new System.Drawing.Point(116, 219);
+            this.Precio_Producto1.Name = "Precio_Producto1";
+            this.Precio_Producto1.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto1.TabIndex = 31;
+            this.Precio_Producto1.Text = "$18.000";
+            // 
+            // Imagen_producto4
+            // 
+            this.Imagen_producto4.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto4.Image")));
+            this.Imagen_producto4.Location = new System.Drawing.Point(781, 3);
+            this.Imagen_producto4.Name = "Imagen_producto4";
+            this.Imagen_producto4.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto4.TabIndex = 29;
+            this.Imagen_producto4.TabStop = false;
+            // 
+            // Imagen_producto3
+            // 
+            this.Imagen_producto3.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto3.Image")));
+            this.Imagen_producto3.Location = new System.Drawing.Point(544, 3);
+            this.Imagen_producto3.Name = "Imagen_producto3";
+            this.Imagen_producto3.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto3.TabIndex = 27;
+            this.Imagen_producto3.TabStop = false;
+            // 
+            // Imagen_producto2
+            // 
+            this.Imagen_producto2.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_producto2.Image")));
+            this.Imagen_producto2.Location = new System.Drawing.Point(292, 3);
+            this.Imagen_producto2.Name = "Imagen_producto2";
+            this.Imagen_producto2.Size = new System.Drawing.Size(208, 179);
+            this.Imagen_producto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_producto2.TabIndex = 25;
+            this.Imagen_producto2.TabStop = false;
             // 
             // Btn_Siguiente
             // 
@@ -1344,685 +2467,6 @@
             this.Pnl_SigAnt.Size = new System.Drawing.Size(1043, 57);
             this.Pnl_SigAnt.TabIndex = 58;
             // 
-            // Pnl_Pagina3
-            // 
-            this.Pnl_Pagina3.Controls.Add(this.Pnl_Pagina4);
-            this.Pnl_Pagina3.Controls.Add(this.label35);
-            this.Pnl_Pagina3.Controls.Add(this.label36);
-            this.Pnl_Pagina3.Controls.Add(this.button20);
-            this.Pnl_Pagina3.Controls.Add(this.pictureBox28);
-            this.Pnl_Pagina3.Controls.Add(this.label37);
-            this.Pnl_Pagina3.Controls.Add(this.label38);
-            this.Pnl_Pagina3.Controls.Add(this.button21);
-            this.Pnl_Pagina3.Controls.Add(this.pictureBox29);
-            this.Pnl_Pagina3.Controls.Add(this.label39);
-            this.Pnl_Pagina3.Controls.Add(this.label40);
-            this.Pnl_Pagina3.Controls.Add(this.button30);
-            this.Pnl_Pagina3.Controls.Add(this.pictureBox30);
-            this.Pnl_Pagina3.Controls.Add(this.label41);
-            this.Pnl_Pagina3.Controls.Add(this.label42);
-            this.Pnl_Pagina3.Controls.Add(this.button31);
-            this.Pnl_Pagina3.Controls.Add(this.pictureBox31);
-            this.Pnl_Pagina3.Controls.Add(this.label43);
-            this.Pnl_Pagina3.Controls.Add(this.label44);
-            this.Pnl_Pagina3.Controls.Add(this.button32);
-            this.Pnl_Pagina3.Controls.Add(this.label45);
-            this.Pnl_Pagina3.Controls.Add(this.label46);
-            this.Pnl_Pagina3.Controls.Add(this.button33);
-            this.Pnl_Pagina3.Controls.Add(this.label47);
-            this.Pnl_Pagina3.Controls.Add(this.label48);
-            this.Pnl_Pagina3.Controls.Add(this.button34);
-            this.Pnl_Pagina3.Controls.Add(this.label49);
-            this.Pnl_Pagina3.Controls.Add(this.label50);
-            this.Pnl_Pagina3.Controls.Add(this.pictureBox32);
-            this.Pnl_Pagina3.Controls.Add(this.pictureBox33);
-            this.Pnl_Pagina3.Controls.Add(this.pictureBox34);
-            this.Pnl_Pagina3.Controls.Add(this.button35);
-            this.Pnl_Pagina3.Controls.Add(this.pictureBox35);
-            this.Pnl_Pagina3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pnl_Pagina3.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_Pagina3.Name = "Pnl_Pagina3";
-            this.Pnl_Pagina3.Size = new System.Drawing.Size(1043, 595);
-            this.Pnl_Pagina3.TabIndex = 59;
-            this.Pnl_Pagina3.Visible = false;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(784, 474);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(98, 24);
-            this.label35.TabIndex = 57;
-            this.label35.Text = "Buscapina";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(859, 508);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(60, 18);
-            this.label36.TabIndex = 56;
-            this.label36.Text = "$13.500";
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.Black;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Location = new System.Drawing.Point(781, 538);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(208, 38);
-            this.button20.TabIndex = 55;
-            this.button20.Text = "Añadir al Carrito";
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
-            this.pictureBox28.Location = new System.Drawing.Point(781, 293);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox28.TabIndex = 54;
-            this.pictureBox28.TabStop = false;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(547, 474);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(135, 24);
-            this.label37.TabIndex = 53;
-            this.label37.Text = "Enterogermina";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(619, 508);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(60, 18);
-            this.label38.TabIndex = 52;
-            this.label38.Text = "$20.000";
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.Black;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Location = new System.Drawing.Point(544, 538);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(208, 38);
-            this.button21.TabIndex = 51;
-            this.button21.Text = "Añadir al Carrito";
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
-            this.pictureBox29.Location = new System.Drawing.Point(544, 293);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox29.TabIndex = 50;
-            this.pictureBox29.TabStop = false;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(295, 474);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(88, 24);
-            this.label39.TabIndex = 49;
-            this.label39.Text = "Redoxon";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(376, 508);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(60, 18);
-            this.label40.TabIndex = 48;
-            this.label40.Text = "$18.000";
-            // 
-            // button30
-            // 
-            this.button30.BackColor = System.Drawing.Color.Black;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Location = new System.Drawing.Point(292, 538);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(208, 38);
-            this.button30.TabIndex = 47;
-            this.button30.Text = "Añadir al Carrito";
-            this.button30.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
-            this.pictureBox30.Location = new System.Drawing.Point(292, 293);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox30.TabIndex = 46;
-            this.pictureBox30.TabStop = false;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(48, 474);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(65, 24);
-            this.label41.TabIndex = 45;
-            this.label41.Text = "Rivotril";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(124, 508);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(60, 18);
-            this.label42.TabIndex = 44;
-            this.label42.Text = "$33.000";
-            // 
-            // button31
-            // 
-            this.button31.BackColor = System.Drawing.Color.Black;
-            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button31.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.ForeColor = System.Drawing.Color.White;
-            this.button31.Location = new System.Drawing.Point(45, 538);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(208, 38);
-            this.button31.TabIndex = 43;
-            this.button31.Text = "Añadir al Carrito";
-            this.button31.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
-            this.pictureBox31.Location = new System.Drawing.Point(45, 293);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox31.TabIndex = 42;
-            this.pictureBox31.TabStop = false;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(784, 185);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(63, 24);
-            this.label43.TabIndex = 41;
-            this.label43.Text = "Neuro";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(867, 219);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(60, 18);
-            this.label44.TabIndex = 40;
-            this.label44.Text = "$74.000";
-            // 
-            // button32
-            // 
-            this.button32.BackColor = System.Drawing.Color.Black;
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.ForeColor = System.Drawing.Color.White;
-            this.button32.Location = new System.Drawing.Point(781, 249);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(208, 38);
-            this.button32.TabIndex = 39;
-            this.button32.Text = "Añadir al Carrito";
-            this.button32.UseVisualStyleBackColor = false;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(547, 185);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(107, 24);
-            this.label45.TabIndex = 38;
-            this.label45.Text = "Amoxicilina";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(619, 219);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(52, 18);
-            this.label46.TabIndex = 37;
-            this.label46.Text = "$8.000";
-            // 
-            // button33
-            // 
-            this.button33.BackColor = System.Drawing.Color.Black;
-            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.ForeColor = System.Drawing.Color.White;
-            this.button33.Location = new System.Drawing.Point(544, 249);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(208, 38);
-            this.button33.TabIndex = 36;
-            this.button33.Text = "Añadir al Carrito";
-            this.button33.UseVisualStyleBackColor = false;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(295, 185);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(83, 24);
-            this.label47.TabIndex = 35;
-            this.label47.Text = "Cetrizine";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(364, 219);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(60, 18);
-            this.label48.TabIndex = 34;
-            this.label48.Text = "$24.000";
-            // 
-            // button34
-            // 
-            this.button34.BackColor = System.Drawing.Color.Black;
-            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.ForeColor = System.Drawing.Color.White;
-            this.button34.Location = new System.Drawing.Point(292, 249);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(208, 38);
-            this.button34.TabIndex = 33;
-            this.button34.Text = "Añadir al Carrito";
-            this.button34.UseVisualStyleBackColor = false;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(48, 185);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(154, 24);
-            this.label49.TabIndex = 32;
-            this.label49.Text = "Condones Durex";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(116, 219);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(60, 18);
-            this.label50.TabIndex = 31;
-            this.label50.Text = "$10.000";
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
-            this.pictureBox32.Location = new System.Drawing.Point(781, 3);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox32.TabIndex = 29;
-            this.pictureBox32.TabStop = false;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
-            this.pictureBox33.Location = new System.Drawing.Point(544, 3);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox33.TabIndex = 27;
-            this.pictureBox33.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
-            this.pictureBox34.Location = new System.Drawing.Point(292, 3);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox34.TabIndex = 25;
-            this.pictureBox34.TabStop = false;
-            // 
-            // button35
-            // 
-            this.button35.BackColor = System.Drawing.Color.Black;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.White;
-            this.button35.Location = new System.Drawing.Point(45, 249);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(208, 38);
-            this.button35.TabIndex = 24;
-            this.button35.Text = "Añadir al Carrito";
-            this.button35.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
-            this.pictureBox35.Location = new System.Drawing.Point(45, 4);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox35.TabIndex = 11;
-            this.pictureBox35.TabStop = false;
-            // 
-            // Pnl_Pagina4
-            // 
-            this.Pnl_Pagina4.Controls.Add(this.label55);
-            this.Pnl_Pagina4.Controls.Add(this.label56);
-            this.Pnl_Pagina4.Controls.Add(this.button38);
-            this.Pnl_Pagina4.Controls.Add(this.pictureBox38);
-            this.Pnl_Pagina4.Controls.Add(this.label57);
-            this.Pnl_Pagina4.Controls.Add(this.label58);
-            this.Pnl_Pagina4.Controls.Add(this.button39);
-            this.Pnl_Pagina4.Controls.Add(this.pictureBox39);
-            this.Pnl_Pagina4.Controls.Add(this.label59);
-            this.Pnl_Pagina4.Controls.Add(this.label60);
-            this.Pnl_Pagina4.Controls.Add(this.button40);
-            this.Pnl_Pagina4.Controls.Add(this.label61);
-            this.Pnl_Pagina4.Controls.Add(this.label62);
-            this.Pnl_Pagina4.Controls.Add(this.button41);
-            this.Pnl_Pagina4.Controls.Add(this.label63);
-            this.Pnl_Pagina4.Controls.Add(this.label64);
-            this.Pnl_Pagina4.Controls.Add(this.button42);
-            this.Pnl_Pagina4.Controls.Add(this.label65);
-            this.Pnl_Pagina4.Controls.Add(this.label66);
-            this.Pnl_Pagina4.Controls.Add(this.pictureBox40);
-            this.Pnl_Pagina4.Controls.Add(this.pictureBox41);
-            this.Pnl_Pagina4.Controls.Add(this.pictureBox42);
-            this.Pnl_Pagina4.Controls.Add(this.button43);
-            this.Pnl_Pagina4.Controls.Add(this.pictureBox43);
-            this.Pnl_Pagina4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pnl_Pagina4.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_Pagina4.Name = "Pnl_Pagina4";
-            this.Pnl_Pagina4.Size = new System.Drawing.Size(1043, 595);
-            this.Pnl_Pagina4.TabIndex = 60;
-            this.Pnl_Pagina4.Visible = false;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(295, 474);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(74, 24);
-            this.label55.TabIndex = 49;
-            this.label55.Text = "Nixpirin";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(376, 508);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(52, 18);
-            this.label56.TabIndex = 48;
-            this.label56.Text = "$9.000";
-            // 
-            // button38
-            // 
-            this.button38.BackColor = System.Drawing.Color.Black;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button38.ForeColor = System.Drawing.Color.White;
-            this.button38.Location = new System.Drawing.Point(292, 538);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(208, 38);
-            this.button38.TabIndex = 47;
-            this.button38.Text = "Añadir al Carrito";
-            this.button38.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
-            this.pictureBox38.Location = new System.Drawing.Point(292, 293);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox38.TabIndex = 46;
-            this.pictureBox38.TabStop = false;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(48, 474);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(81, 24);
-            this.label57.TabIndex = 45;
-            this.label57.Text = "Losartán";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(124, 508);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(52, 18);
-            this.label58.TabIndex = 44;
-            this.label58.Text = "$6.000";
-            // 
-            // button39
-            // 
-            this.button39.BackColor = System.Drawing.Color.Black;
-            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button39.ForeColor = System.Drawing.Color.White;
-            this.button39.Location = new System.Drawing.Point(45, 538);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(208, 38);
-            this.button39.TabIndex = 43;
-            this.button39.Text = "Añadir al Carrito";
-            this.button39.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox39
-            // 
-            this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
-            this.pictureBox39.Location = new System.Drawing.Point(45, 293);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox39.TabIndex = 42;
-            this.pictureBox39.TabStop = false;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(784, 185);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(106, 24);
-            this.label59.TabIndex = 41;
-            this.label59.Text = "Genoplasol";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(867, 219);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(60, 18);
-            this.label60.TabIndex = 40;
-            this.label60.Text = "$16.000";
-            // 
-            // button40
-            // 
-            this.button40.BackColor = System.Drawing.Color.Black;
-            this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button40.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button40.ForeColor = System.Drawing.Color.White;
-            this.button40.Location = new System.Drawing.Point(781, 249);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(208, 38);
-            this.button40.TabIndex = 39;
-            this.button40.Text = "Añadir al Carrito";
-            this.button40.UseVisualStyleBackColor = false;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(547, 185);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(90, 24);
-            this.label61.TabIndex = 38;
-            this.label61.Text = "Mieltertos";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(619, 219);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(60, 18);
-            this.label62.TabIndex = 37;
-            this.label62.Text = "$28.000";
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.Color.Black;
-            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button41.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button41.ForeColor = System.Drawing.Color.White;
-            this.button41.Location = new System.Drawing.Point(544, 249);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(208, 38);
-            this.button41.TabIndex = 36;
-            this.button41.Text = "Añadir al Carrito";
-            this.button41.UseVisualStyleBackColor = false;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(295, 185);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(83, 24);
-            this.label63.TabIndex = 35;
-            this.label63.Text = "Imodium";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(364, 219);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(60, 18);
-            this.label64.TabIndex = 34;
-            this.label64.Text = "$16.200";
-            // 
-            // button42
-            // 
-            this.button42.BackColor = System.Drawing.Color.Black;
-            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button42.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button42.ForeColor = System.Drawing.Color.White;
-            this.button42.Location = new System.Drawing.Point(292, 249);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(208, 38);
-            this.button42.TabIndex = 33;
-            this.button42.Text = "Añadir al Carrito";
-            this.button42.UseVisualStyleBackColor = false;
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(48, 185);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(180, 24);
-            this.label65.TabIndex = 32;
-            this.label65.Text = "Paracetamol Tablets";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(116, 219);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(52, 18);
-            this.label66.TabIndex = 31;
-            this.label66.Text = "$8.500";
-            // 
-            // pictureBox40
-            // 
-            this.pictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox40.Image")));
-            this.pictureBox40.Location = new System.Drawing.Point(781, 3);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox40.TabIndex = 29;
-            this.pictureBox40.TabStop = false;
-            // 
-            // pictureBox41
-            // 
-            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
-            this.pictureBox41.Location = new System.Drawing.Point(544, 3);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox41.TabIndex = 27;
-            this.pictureBox41.TabStop = false;
-            // 
-            // pictureBox42
-            // 
-            this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
-            this.pictureBox42.Location = new System.Drawing.Point(292, 3);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(208, 179);
-            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox42.TabIndex = 25;
-            this.pictureBox42.TabStop = false;
-            // 
-            // button43
-            // 
-            this.button43.BackColor = System.Drawing.Color.Black;
-            this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button43.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button43.ForeColor = System.Drawing.Color.White;
-            this.button43.Location = new System.Drawing.Point(45, 249);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(208, 38);
-            this.button43.TabIndex = 24;
-            this.button43.Text = "Añadir al Carrito";
-            this.button43.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox43
-            // 
-            this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
-            this.pictureBox43.Location = new System.Drawing.Point(45, 4);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(208, 178);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox43.TabIndex = 11;
-            this.pictureBox43.TabStop = false;
-            // 
             // FormInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2059,7 +2503,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -2074,53 +2518,69 @@
             this.Pnl_Pagina1.PerformLayout();
             this.Pnl_Pagina2.ResumeLayout(false);
             this.Pnl_Pagina2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.Pnl_SigAnt.ResumeLayout(false);
             this.Pnl_Pagina3.ResumeLayout(false);
             this.Pnl_Pagina3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             this.Pnl_Pagina4.ResumeLayout(false);
             this.Pnl_Pagina4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.Celda5.ResumeLayout(false);
+            this.Celda5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto5)).EndInit();
+            this.Celda4.ResumeLayout(false);
+            this.Celda4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto4)).EndInit();
+            this.Celda3.ResumeLayout(false);
+            this.Celda3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto3)).EndInit();
+            this.Celda2.ResumeLayout(false);
+            this.Celda2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto2)).EndInit();
+            this.Celda1.ResumeLayout(false);
+            this.Celda1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto2)).EndInit();
+            this.Pnl_SigAnt.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Btn_Salir;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCarrito1;
+        private System.Windows.Forms.PictureBox Imagen_producto1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -2131,7 +2591,7 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_Añadir1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
@@ -2143,129 +2603,162 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Panel Pnl_Pagina1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label N_Producto8;
+        private System.Windows.Forms.Label Precio_Producto8;
+        private System.Windows.Forms.Button Btn_Añadir8;
+        private System.Windows.Forms.PictureBox Imagen_producto8;
+        private System.Windows.Forms.Label N_Producto7;
+        private System.Windows.Forms.Label Precio_Producto7;
+        private System.Windows.Forms.Button Btn_Añadir7;
+        private System.Windows.Forms.PictureBox Imagen_producto7;
+        private System.Windows.Forms.Label N_Producto6;
+        private System.Windows.Forms.Label Precio_Producto6;
+        private System.Windows.Forms.Button Btn_Añadir6;
+        private System.Windows.Forms.PictureBox Imagen_producto6;
+        private System.Windows.Forms.Label N_Producto5;
+        private System.Windows.Forms.Label Precio_Producto5;
+        private System.Windows.Forms.Button Btn_Añadir5;
+        private System.Windows.Forms.PictureBox Imagen_producto5;
+        private System.Windows.Forms.Label N_Producto4;
+        private System.Windows.Forms.Label Precio_Producto4;
+        private System.Windows.Forms.Button Btn_Añadir4;
+        private System.Windows.Forms.Label N_Producto3;
+        private System.Windows.Forms.Label Precio_Producto3;
+        private System.Windows.Forms.Button Btn_Añadir3;
+        private System.Windows.Forms.Label N_Producto2;
+        private System.Windows.Forms.Label Precio_Producto2;
+        private System.Windows.Forms.Button Btn_Añadir2;
+        private System.Windows.Forms.Label N_Producto1;
+        private System.Windows.Forms.Label Precio_Producto1;
+        private System.Windows.Forms.PictureBox Imagen_producto4;
+        private System.Windows.Forms.PictureBox Imagen_producto3;
+        private System.Windows.Forms.PictureBox Imagen_producto2;
         private System.Windows.Forms.Button Btn_Siguiente;
         private System.Windows.Forms.Button Btn_Anterior;
         private System.Windows.Forms.Panel Pnl_Pagina2;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.Label Nombre_producto16;
+        private System.Windows.Forms.Label Precio_producto16;
+        private System.Windows.Forms.Button Btn_Añadir16;
+        private System.Windows.Forms.PictureBox Imagen_producto16;
+        private System.Windows.Forms.Label Nombre_producto15;
+        private System.Windows.Forms.Label Precio_producto15;
+        private System.Windows.Forms.Button Btn_Añadir15;
+        private System.Windows.Forms.PictureBox Imagen_producto15;
+        private System.Windows.Forms.Label Nombre_producto14;
+        private System.Windows.Forms.Label Precio_producto14;
+        private System.Windows.Forms.Button Btn_Añadir14;
+        private System.Windows.Forms.PictureBox Imagen_producto14;
+        private System.Windows.Forms.Label Nombre_producto13;
+        private System.Windows.Forms.Label Precio_producto13;
+        private System.Windows.Forms.Button Btn_Añadir13;
+        private System.Windows.Forms.PictureBox Imagen_producto13;
+        private System.Windows.Forms.Label Nombre_producto12;
+        private System.Windows.Forms.Label Precio_producto12;
+        private System.Windows.Forms.Button Btn_Añadir12;
+        private System.Windows.Forms.Label Nombre_producto11;
+        private System.Windows.Forms.Label Precio_producto11;
+        private System.Windows.Forms.Button Btn_Añadir11;
+        private System.Windows.Forms.Label Nombre_producto10;
+        private System.Windows.Forms.Label Precio_producto10;
+        private System.Windows.Forms.Button Btn_Añadir10;
+        private System.Windows.Forms.Label Nombre_producto9;
+        private System.Windows.Forms.Label Precio_producto9;
+        private System.Windows.Forms.PictureBox Imagen_producto12;
+        private System.Windows.Forms.PictureBox Imagen_producto11;
+        private System.Windows.Forms.PictureBox Imagen_producto10;
+        private System.Windows.Forms.Button Btn_Añadir9;
+        private System.Windows.Forms.PictureBox Imagen_producto9;
         private System.Windows.Forms.Panel Pnl_SigAnt;
         private System.Windows.Forms.Panel Pnl_Pagina3;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.PictureBox pictureBox28;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.PictureBox pictureBox29;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.PictureBox pictureBox30;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.PictureBox pictureBox31;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.PictureBox pictureBox32;
-        private System.Windows.Forms.PictureBox pictureBox33;
-        private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.PictureBox pictureBox35;
+        private System.Windows.Forms.Label Nombre_producto24;
+        private System.Windows.Forms.Label Precio_producto24;
+        private System.Windows.Forms.Button Btn_Añadir24;
+        private System.Windows.Forms.PictureBox Imagen_producto24;
+        private System.Windows.Forms.Label Nombre_producto23;
+        private System.Windows.Forms.Label Precio_producto23;
+        private System.Windows.Forms.Button Btn_Añadir23;
+        private System.Windows.Forms.PictureBox Imagen_producto23;
+        private System.Windows.Forms.Label Nombre_producto22;
+        private System.Windows.Forms.Label Precio_producto22;
+        private System.Windows.Forms.Button Btn_Añadir22;
+        private System.Windows.Forms.PictureBox Imagen_producto22;
+        private System.Windows.Forms.Label Nombre_producto21;
+        private System.Windows.Forms.Label Precio_producto21;
+        private System.Windows.Forms.Button Btn_Añadir21;
+        private System.Windows.Forms.PictureBox Imagen_producto21;
+        private System.Windows.Forms.Label Nombre_producto20;
+        private System.Windows.Forms.Label Precio_producto20;
+        private System.Windows.Forms.Button Btn_Añadir20;
+        private System.Windows.Forms.Label Nombre_producto19;
+        private System.Windows.Forms.Label Precio_producto19;
+        private System.Windows.Forms.Button Btn_Añadir19;
+        private System.Windows.Forms.Label Nombre_producto18;
+        private System.Windows.Forms.Label Precio_producto18;
+        private System.Windows.Forms.Button Btn_Añadir18;
+        private System.Windows.Forms.Label Nombre_producto17;
+        private System.Windows.Forms.Label Precio_producto17;
+        private System.Windows.Forms.PictureBox Imagen_producto20;
+        private System.Windows.Forms.PictureBox Imagen_producto19;
+        private System.Windows.Forms.PictureBox Imagen_producto18;
+        private System.Windows.Forms.Button Btn_Añadir17;
+        private System.Windows.Forms.PictureBox Imagen_producto17;
         private System.Windows.Forms.Panel Pnl_Pagina4;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.PictureBox pictureBox38;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.PictureBox pictureBox39;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.PictureBox pictureBox40;
-        private System.Windows.Forms.PictureBox pictureBox41;
-        private System.Windows.Forms.PictureBox pictureBox42;
-        private System.Windows.Forms.Button button43;
-        private System.Windows.Forms.PictureBox pictureBox43;
+        private System.Windows.Forms.Label Nombre_producto30;
+        private System.Windows.Forms.Label Precio_producto30;
+        private System.Windows.Forms.Button Btn_Añadir30;
+        private System.Windows.Forms.PictureBox Imagen_producto30;
+        private System.Windows.Forms.Label Nombre_producto29;
+        private System.Windows.Forms.Label Precio_producto29;
+        private System.Windows.Forms.Button Btn_Añadir29;
+        private System.Windows.Forms.PictureBox Imagen_producto29;
+        private System.Windows.Forms.Label Nombre_producto28;
+        private System.Windows.Forms.Label Precio_producto28;
+        private System.Windows.Forms.Button Btn_Añadir28;
+        private System.Windows.Forms.Label Nombre_producto27;
+        private System.Windows.Forms.Label Precio_producto27;
+        private System.Windows.Forms.Button Btn_Añadir27;
+        private System.Windows.Forms.Label Nombre_producto26;
+        private System.Windows.Forms.Label Precio_producto26;
+        private System.Windows.Forms.Button Btn_Añadir26;
+        private System.Windows.Forms.Label Nombre_producto25;
+        private System.Windows.Forms.Label Precio_producto25;
+        private System.Windows.Forms.PictureBox Imagen_producto28;
+        private System.Windows.Forms.PictureBox Imagen_producto27;
+        private System.Windows.Forms.PictureBox Imagen_producto26;
+        private System.Windows.Forms.Button Btn_Añadir25;
+        private System.Windows.Forms.PictureBox Imagen_producto25;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel Celda5;
+        private System.Windows.Forms.Button Btn_Comprar;
+        private System.Windows.Forms.Label ProductoN5;
+        private System.Windows.Forms.Label PrecioProducto5;
+        private System.Windows.Forms.PictureBox ImagenProducto5;
+        private System.Windows.Forms.Panel Celda4;
+        private System.Windows.Forms.Label ProductoN4;
+        private System.Windows.Forms.Label PrecioProducto4;
+        private System.Windows.Forms.PictureBox ImagenProducto4;
+        private System.Windows.Forms.Panel Celda2;
+        private System.Windows.Forms.Label ProductoN2;
+        private System.Windows.Forms.Label PrecioProducto2;
+        private System.Windows.Forms.PictureBox ImagenProducto2;
+        private System.Windows.Forms.Panel Celda1;
+        private System.Windows.Forms.Label ProductoN1;
+        private System.Windows.Forms.Label PrecioProducto1;
+        private System.Windows.Forms.PictureBox ImagenProducto;
+        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button btnCarrito2;
+        private System.Windows.Forms.Label lbl_Estado5;
+        private System.Windows.Forms.Label lbl_Estado4;
+        private System.Windows.Forms.Panel Celda3;
+        private System.Windows.Forms.Label lbl_Estado3;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Label ProductoN3;
+        private System.Windows.Forms.Label PrecioProducto3;
+        private System.Windows.Forms.PictureBox ImagenProducto3;
+        private System.Windows.Forms.Label lbl_Estado2;
+        private System.Windows.Forms.Label lbl_Estado1;
     }
 }

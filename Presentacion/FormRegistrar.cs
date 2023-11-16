@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entidades;
+using Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,8 @@ namespace Presentacion
 {
     public partial class FormRegistrar : Form
     {
+        Servicio_Ciente servicio_Ciente = new Servicio_Ciente(ConfigConnection.ConnectionString);
+        Login login = new Login();
         public FormRegistrar()
         {
             InitializeComponent();
@@ -26,7 +30,13 @@ namespace Presentacion
 
         private void BtnRegistrar_Click(object sender, EventArgs e)
         {
-
+            login.Documento = int.Parse(txtDocumento.Text);
+            login.Nombre_Completo = txtNombreUsuario.Text;
+            login.Fecha_Nacimineto = DateTime.Parse(Dtm_FechaN.Text);
+            login.Usuario = txtUsuario.Text;
+            login.Contraseña = txtContraseña.Text;
+            login.Telefono = TxtTelefono.Text;
+            servicio_Ciente.Insert(login);
         }
     }
 }

@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Manejo_Formulario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioProducto.cs" />
+    <Compile Include="Servicio_Ciente.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">

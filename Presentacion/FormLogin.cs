@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entidades;
+using Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +14,11 @@ namespace Presentacion
 {
     public partial class FormLogin : Form
     {
+        Servicio_Ciente servicio_Ciente = new Servicio_Ciente(ConfigConnection.ConnectionString);
+        Login login = new Login();
         public FormLogin()
         {
             InitializeComponent();
-            FormInicio formInicio = new FormInicio();
-            formInicio.Show();
-            this.Hide();
         }
 
         private void Btn_Salir_Click(object sender, EventArgs e)
@@ -30,6 +31,15 @@ namespace Presentacion
             FormRegistrar fr = new FormRegistrar();
             fr.Show();
             this.Hide();
+        }
+
+        private void Btn_Ingresar_Click(object sender, EventArgs e)
+        {
+            FormInicio inicio = new FormInicio();
+            login.Usuario = txtUsuario.Text;
+            login.Contraseña = txtContraseña.Text;
+            Label nombre = inicio.EnviarNombre();
+            servicio_Ciente.IniciarSesion(inicio, login,nombre);
         }
     }
 }

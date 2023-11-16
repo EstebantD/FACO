@@ -12,23 +12,23 @@ namespace Datos
     {
         public static string ConnectionString = ConfigurationManager.ConnectionStrings["cadena_conexion"].ConnectionString;
 
-        protected SqlConnection _Conexion;
+        protected SqlConnection conexion;
         //cadena de conexion con la base de datos y objetos de conexion
         public Conexion(string connectionString)
         {
-            _Conexion = new SqlConnection(connectionString);
+            conexion = new SqlConnection(connectionString);
         }
 
         //abre la conexion con la base de datos//
         public void Open()
         {
-            _Conexion.Open();
+            conexion.Open();
 
         }
         //Cierra la conexion con la base de datos//
         public void Closed()
         {
-            _Conexion.Close();
+            conexion.Close();
         }
     }
 }

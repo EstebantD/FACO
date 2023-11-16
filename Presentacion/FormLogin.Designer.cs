@@ -33,7 +33,7 @@
             this.Btn_Ingresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -65,6 +65,7 @@
             this.Btn_Ingresar.TabIndex = 1;
             this.Btn_Ingresar.Text = "Ingresar";
             this.Btn_Ingresar.UseVisualStyleBackColor = false;
+            this.Btn_Ingresar.Click += new System.EventHandler(this.Btn_Ingresar_Click);
             // 
             // pictureBox1
             // 
@@ -85,13 +86,13 @@
             this.txtContraseña.Size = new System.Drawing.Size(234, 20);
             this.txtContraseña.TabIndex = 16;
             // 
-            // txtDocumento
+            // txtUsuario
             // 
-            this.txtDocumento.Location = new System.Drawing.Point(387, 96);
-            this.txtDocumento.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDocumento.Name = "txtDocumento";
-            this.txtDocumento.Size = new System.Drawing.Size(234, 20);
-            this.txtDocumento.TabIndex = 15;
+            this.txtUsuario.Location = new System.Drawing.Point(387, 96);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(234, 20);
+            this.txtUsuario.TabIndex = 15;
             // 
             // label2
             // 
@@ -148,7 +149,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtContraseña);
-            this.Controls.Add(this.txtDocumento);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -170,7 +171,7 @@
         private System.Windows.Forms.Button Btn_Ingresar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
