@@ -20,23 +20,38 @@ namespace Presentacion
         {
             InitializeComponent();
         }
-
-        private void BtnVolver_Click(object sender, EventArgs e)
+        private void Volver_Login()
         {
             FormLogin fl = new FormLogin();
             fl.Show();
             this.Close();
         }
 
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            Volver_Login();
+        }
+
         private void BtnRegistrar_Click(object sender, EventArgs e)
         {
-            login.Documento = int.Parse(txtDocumento.Text);
+            login.Documento = txtDocumento.Text;
             login.Nombre_Completo = txtNombreUsuario.Text;
             login.Fecha_Nacimineto = DateTime.Parse(Dtm_FechaN.Text);
             login.Usuario = txtUsuario.Text;
             login.Contraseña = txtContraseña.Text;
             login.Telefono = TxtTelefono.Text;
             servicio_Ciente.Insert(login);
+            Volver_Login();
+            Vacias_Casillas();
+        }
+        private void Vacias_Casillas()
+        {
+            login.Documento = "";
+            login.Nombre_Completo = "";
+            login.Fecha_Nacimineto = DateTime.Now;
+            login.Usuario = "";
+            login.Contraseña = "";
+            login.Telefono = "";
         }
     }
 }

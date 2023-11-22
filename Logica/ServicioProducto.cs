@@ -3,6 +3,7 @@ using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,14 +21,65 @@ namespace Logica
         {
             RepositorioProductos.Insert(productos);
         }
-        public void Detalles_Producto(Label nombre_producto,Label precio_producto,PictureBox imagen_producto,Panel celda, Label nombre_celda, Label precio_celda, PictureBox imagen_celda, Label estado_celda)
+
+        public void Cerrar_Celda(Label nombre_producto, Label precio_producto, PictureBox imagen_producto, Panel celda, Label nombre_celda, Label precio_celda, PictureBox imagen_celda, Label estado_celda1, Label estado_celda2, Label estado_celda3, Label estado_celda4, Label estado_celda5)
         {
-            celda.Visible = true;
+            celda.Visible = false;
             nombre_celda.Text = nombre_producto.Text;
             precio_celda.Text = precio_producto.Text;
             imagen_celda = imagen_producto;
-            estado_celda.Text = "Ocupado";
+            estado_celda1.Text = "Disponible";
+            //Mover_Celdas(nombre_producto, precio_producto, imagen_producto, celda, nombre_celda, precio_celda, imagen_celda, estado_celda1, estado_celda2, estado_celda3, estado_celda4, estado_celda5);
 
+        }
+        public void Mover_Celdas(Label nombre_producto, Label precio_producto, PictureBox imagen_producto, Panel celda, Label nombre_celda, Label precio_celda, PictureBox imagen_celda, Label estado_celda, Label estado_celda2, Label estado_celda3, Label estado_celda4, Label estado_celda5)
+        {
+            if (estado_celda.Text == "Disponible")
+            {
+
+            }
+            else if (estado_celda2.Text == "Disponible")
+            {
+
+            }
+            else if (estado_celda3.Text == "Disponible")
+            {
+
+            }
+            else if (estado_celda4.Text == "Disponible")
+            {
+
+            }
+            else if (estado_celda5.Text == "Disponible")
+            {
+
+            }
+        }
+        public int ObtenerTotal(int producto1, int producto2, int producto3, int producto4, int producto5)
+        {
+            //if (producto1==0)
+            //{
+
+            //}
+            //if (producto2 == 0)
+            //{
+
+            //}
+            //if (producto3 == 0)
+            //{
+
+            //}
+            //if (producto4 == 0)
+            //{
+
+            //}
+            //if (producto5 == 0)
+            //{
+
+            //}
+            int Total=0;
+            Total = producto1 + producto2 + producto3 + producto4 + producto5;
+            return Total;          
         }
     }
 }

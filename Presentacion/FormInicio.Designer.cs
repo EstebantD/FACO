@@ -66,32 +66,32 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Celda5 = new System.Windows.Forms.Panel();
             this.lbl_Estado5 = new System.Windows.Forms.Label();
-            this.button46 = new System.Windows.Forms.Button();
+            this.btn_x5 = new System.Windows.Forms.Button();
             this.Btn_Comprar = new System.Windows.Forms.Button();
             this.ProductoN5 = new System.Windows.Forms.Label();
             this.PrecioProducto5 = new System.Windows.Forms.Label();
             this.ImagenProducto5 = new System.Windows.Forms.PictureBox();
             this.Celda4 = new System.Windows.Forms.Panel();
             this.lbl_Estado4 = new System.Windows.Forms.Label();
-            this.button45 = new System.Windows.Forms.Button();
+            this.btn_x4 = new System.Windows.Forms.Button();
             this.ProductoN4 = new System.Windows.Forms.Label();
             this.PrecioProducto4 = new System.Windows.Forms.Label();
             this.ImagenProducto4 = new System.Windows.Forms.PictureBox();
             this.Celda3 = new System.Windows.Forms.Panel();
             this.lbl_Estado3 = new System.Windows.Forms.Label();
-            this.button44 = new System.Windows.Forms.Button();
+            this.btn_x3 = new System.Windows.Forms.Button();
             this.ProductoN3 = new System.Windows.Forms.Label();
             this.PrecioProducto3 = new System.Windows.Forms.Label();
             this.ImagenProducto3 = new System.Windows.Forms.PictureBox();
             this.Celda2 = new System.Windows.Forms.Panel();
             this.lbl_Estado2 = new System.Windows.Forms.Label();
-            this.button37 = new System.Windows.Forms.Button();
+            this.btn_x2 = new System.Windows.Forms.Button();
             this.ProductoN2 = new System.Windows.Forms.Label();
             this.PrecioProducto2 = new System.Windows.Forms.Label();
             this.ImagenProducto2 = new System.Windows.Forms.PictureBox();
             this.Celda1 = new System.Windows.Forms.Panel();
             this.lbl_Estado1 = new System.Windows.Forms.Label();
-            this.button36 = new System.Windows.Forms.Button();
+            this.btn_x1 = new System.Windows.Forms.Button();
             this.ProductoN1 = new System.Windows.Forms.Label();
             this.PrecioProducto1 = new System.Windows.Forms.Label();
             this.ImagenProducto = new System.Windows.Forms.PictureBox();
@@ -216,6 +216,8 @@
             this.Btn_Siguiente = new System.Windows.Forms.Button();
             this.Btn_Anterior = new System.Windows.Forms.Button();
             this.Pnl_SigAnt = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Lbl_Total = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto1)).BeginInit();
@@ -784,8 +786,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.Lbl_Total);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lbl_Estado5);
             this.panel2.Controls.Add(this.Celda5);
             this.panel2.Controls.Add(this.Celda4);
+            this.panel2.Controls.Add(this.Btn_Comprar);
             this.panel2.Controls.Add(this.Celda3);
             this.panel2.Controls.Add(this.Celda2);
             this.panel2.Controls.Add(this.Celda1);
@@ -797,15 +803,13 @@
             // 
             // Celda5
             // 
-            this.Celda5.Controls.Add(this.lbl_Estado5);
-            this.Celda5.Controls.Add(this.button46);
-            this.Celda5.Controls.Add(this.Btn_Comprar);
+            this.Celda5.Controls.Add(this.btn_x5);
             this.Celda5.Controls.Add(this.ProductoN5);
             this.Celda5.Controls.Add(this.PrecioProducto5);
             this.Celda5.Controls.Add(this.ImagenProducto5);
             this.Celda5.Location = new System.Drawing.Point(0, 360);
             this.Celda5.Name = "Celda5";
-            this.Celda5.Size = new System.Drawing.Size(821, 87);
+            this.Celda5.Size = new System.Drawing.Size(420, 87);
             this.Celda5.TabIndex = 5;
             this.Celda5.Visible = false;
             // 
@@ -813,33 +817,34 @@
             // 
             this.lbl_Estado5.AutoSize = true;
             this.lbl_Estado5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Estado5.Location = new System.Drawing.Point(598, 59);
+            this.lbl_Estado5.Location = new System.Drawing.Point(630, 420);
             this.lbl_Estado5.Name = "lbl_Estado5";
             this.lbl_Estado5.Size = new System.Drawing.Size(77, 18);
             this.lbl_Estado5.TabIndex = 8;
             this.lbl_Estado5.Text = "Disponible";
             this.lbl_Estado5.Visible = false;
             // 
-            // button46
+            // btn_x5
             // 
-            this.button46.BackColor = System.Drawing.Color.OrangeRed;
-            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button46.Location = new System.Drawing.Point(355, 32);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(25, 25);
-            this.button46.TabIndex = 7;
-            this.button46.Text = "x";
-            this.button46.UseVisualStyleBackColor = false;
+            this.btn_x5.BackColor = System.Drawing.Color.Crimson;
+            this.btn_x5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_x5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_x5.Location = new System.Drawing.Point(355, 32);
+            this.btn_x5.Name = "btn_x5";
+            this.btn_x5.Size = new System.Drawing.Size(25, 25);
+            this.btn_x5.TabIndex = 7;
+            this.btn_x5.Text = "x";
+            this.btn_x5.UseVisualStyleBackColor = false;
+            this.btn_x5.Click += new System.EventHandler(this.btn_x5_Click);
             // 
             // Btn_Comprar
             // 
             this.Btn_Comprar.BackColor = System.Drawing.Color.LimeGreen;
             this.Btn_Comprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Comprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Comprar.Location = new System.Drawing.Point(714, 23);
+            this.Btn_Comprar.Location = new System.Drawing.Point(713, 388);
             this.Btn_Comprar.Name = "Btn_Comprar";
-            this.Btn_Comprar.Size = new System.Drawing.Size(107, 61);
+            this.Btn_Comprar.Size = new System.Drawing.Size(98, 61);
             this.Btn_Comprar.TabIndex = 3;
             this.Btn_Comprar.Text = "Comprar";
             this.Btn_Comprar.UseVisualStyleBackColor = false;
@@ -866,16 +871,19 @@
             // 
             // ImagenProducto5
             // 
-            this.ImagenProducto5.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ImagenProducto5.Image = ((System.Drawing.Image)(resources.GetObject("ImagenProducto5.Image")));
+            this.ImagenProducto5.Location = new System.Drawing.Point(0, 0);
             this.ImagenProducto5.Name = "ImagenProducto5";
-            this.ImagenProducto5.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto5.Size = new System.Drawing.Size(100, 87);
+            this.ImagenProducto5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImagenProducto5.TabIndex = 0;
             this.ImagenProducto5.TabStop = false;
             // 
             // Celda4
             // 
             this.Celda4.Controls.Add(this.lbl_Estado4);
-            this.Celda4.Controls.Add(this.button45);
+            this.Celda4.Controls.Add(this.btn_x4);
             this.Celda4.Controls.Add(this.ProductoN4);
             this.Celda4.Controls.Add(this.PrecioProducto4);
             this.Celda4.Controls.Add(this.ImagenProducto4);
@@ -896,17 +904,18 @@
             this.lbl_Estado4.Text = "Disponible";
             this.lbl_Estado4.Visible = false;
             // 
-            // button45
+            // btn_x4
             // 
-            this.button45.BackColor = System.Drawing.Color.OrangeRed;
-            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button45.Location = new System.Drawing.Point(355, 29);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(25, 25);
-            this.button45.TabIndex = 6;
-            this.button45.Text = "x";
-            this.button45.UseVisualStyleBackColor = false;
+            this.btn_x4.BackColor = System.Drawing.Color.Crimson;
+            this.btn_x4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_x4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_x4.Location = new System.Drawing.Point(355, 29);
+            this.btn_x4.Name = "btn_x4";
+            this.btn_x4.Size = new System.Drawing.Size(25, 25);
+            this.btn_x4.TabIndex = 6;
+            this.btn_x4.Text = "x";
+            this.btn_x4.UseVisualStyleBackColor = false;
+            this.btn_x4.Click += new System.EventHandler(this.btn_x4_Click);
             // 
             // ProductoN4
             // 
@@ -930,16 +939,19 @@
             // 
             // ImagenProducto4
             // 
-            this.ImagenProducto4.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ImagenProducto4.Image = ((System.Drawing.Image)(resources.GetObject("ImagenProducto4.Image")));
+            this.ImagenProducto4.Location = new System.Drawing.Point(0, 0);
             this.ImagenProducto4.Name = "ImagenProducto4";
-            this.ImagenProducto4.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto4.Size = new System.Drawing.Size(100, 87);
+            this.ImagenProducto4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImagenProducto4.TabIndex = 0;
             this.ImagenProducto4.TabStop = false;
             // 
             // Celda3
             // 
             this.Celda3.Controls.Add(this.lbl_Estado3);
-            this.Celda3.Controls.Add(this.button44);
+            this.Celda3.Controls.Add(this.btn_x3);
             this.Celda3.Controls.Add(this.ProductoN3);
             this.Celda3.Controls.Add(this.PrecioProducto3);
             this.Celda3.Controls.Add(this.ImagenProducto3);
@@ -960,17 +972,18 @@
             this.lbl_Estado3.Text = "Disponible";
             this.lbl_Estado3.Visible = false;
             // 
-            // button44
+            // btn_x3
             // 
-            this.button44.BackColor = System.Drawing.Color.OrangeRed;
-            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button44.Location = new System.Drawing.Point(355, 29);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(25, 25);
-            this.button44.TabIndex = 5;
-            this.button44.Text = "x";
-            this.button44.UseVisualStyleBackColor = false;
+            this.btn_x3.BackColor = System.Drawing.Color.Crimson;
+            this.btn_x3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_x3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_x3.Location = new System.Drawing.Point(355, 29);
+            this.btn_x3.Name = "btn_x3";
+            this.btn_x3.Size = new System.Drawing.Size(25, 25);
+            this.btn_x3.TabIndex = 5;
+            this.btn_x3.Text = "x";
+            this.btn_x3.UseVisualStyleBackColor = false;
+            this.btn_x3.Click += new System.EventHandler(this.btn_x3_Click);
             // 
             // ProductoN3
             // 
@@ -995,16 +1008,19 @@
             // 
             // ImagenProducto3
             // 
-            this.ImagenProducto3.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ImagenProducto3.Image = ((System.Drawing.Image)(resources.GetObject("ImagenProducto3.Image")));
+            this.ImagenProducto3.Location = new System.Drawing.Point(0, 0);
             this.ImagenProducto3.Name = "ImagenProducto3";
-            this.ImagenProducto3.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto3.Size = new System.Drawing.Size(100, 87);
+            this.ImagenProducto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImagenProducto3.TabIndex = 0;
             this.ImagenProducto3.TabStop = false;
             // 
             // Celda2
             // 
             this.Celda2.Controls.Add(this.lbl_Estado2);
-            this.Celda2.Controls.Add(this.button37);
+            this.Celda2.Controls.Add(this.btn_x2);
             this.Celda2.Controls.Add(this.ProductoN2);
             this.Celda2.Controls.Add(this.PrecioProducto2);
             this.Celda2.Controls.Add(this.ImagenProducto2);
@@ -1025,17 +1041,18 @@
             this.lbl_Estado2.Text = "Disponible";
             this.lbl_Estado2.Visible = false;
             // 
-            // button37
+            // btn_x2
             // 
-            this.button37.BackColor = System.Drawing.Color.OrangeRed;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button37.Location = new System.Drawing.Point(355, 29);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(25, 25);
-            this.button37.TabIndex = 5;
-            this.button37.Text = "x";
-            this.button37.UseVisualStyleBackColor = false;
+            this.btn_x2.BackColor = System.Drawing.Color.Crimson;
+            this.btn_x2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_x2.Location = new System.Drawing.Point(355, 29);
+            this.btn_x2.Name = "btn_x2";
+            this.btn_x2.Size = new System.Drawing.Size(25, 25);
+            this.btn_x2.TabIndex = 5;
+            this.btn_x2.Text = "x";
+            this.btn_x2.UseVisualStyleBackColor = false;
+            this.btn_x2.Click += new System.EventHandler(this.btn_x2_Click);
             // 
             // ProductoN2
             // 
@@ -1059,16 +1076,19 @@
             // 
             // ImagenProducto2
             // 
-            this.ImagenProducto2.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ImagenProducto2.Image = ((System.Drawing.Image)(resources.GetObject("ImagenProducto2.Image")));
+            this.ImagenProducto2.Location = new System.Drawing.Point(0, 0);
             this.ImagenProducto2.Name = "ImagenProducto2";
-            this.ImagenProducto2.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto2.Size = new System.Drawing.Size(100, 87);
+            this.ImagenProducto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImagenProducto2.TabIndex = 0;
             this.ImagenProducto2.TabStop = false;
             // 
             // Celda1
             // 
             this.Celda1.Controls.Add(this.lbl_Estado1);
-            this.Celda1.Controls.Add(this.button36);
+            this.Celda1.Controls.Add(this.btn_x1);
             this.Celda1.Controls.Add(this.ProductoN1);
             this.Celda1.Controls.Add(this.PrecioProducto1);
             this.Celda1.Controls.Add(this.ImagenProducto);
@@ -1089,17 +1109,18 @@
             this.lbl_Estado1.Text = "Disponible";
             this.lbl_Estado1.Visible = false;
             // 
-            // button36
+            // btn_x1
             // 
-            this.button36.BackColor = System.Drawing.Color.OrangeRed;
-            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button36.Location = new System.Drawing.Point(355, 39);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(25, 25);
-            this.button36.TabIndex = 4;
-            this.button36.Text = "x";
-            this.button36.UseVisualStyleBackColor = false;
+            this.btn_x1.BackColor = System.Drawing.Color.Crimson;
+            this.btn_x1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_x1.Location = new System.Drawing.Point(355, 39);
+            this.btn_x1.Name = "btn_x1";
+            this.btn_x1.Size = new System.Drawing.Size(25, 25);
+            this.btn_x1.TabIndex = 4;
+            this.btn_x1.Text = "x";
+            this.btn_x1.UseVisualStyleBackColor = false;
+            this.btn_x1.Click += new System.EventHandler(this.btn_x1_Click);
             // 
             // ProductoN1
             // 
@@ -1124,9 +1145,12 @@
             // 
             // ImagenProducto
             // 
-            this.ImagenProducto.Location = new System.Drawing.Point(0, 3);
+            this.ImagenProducto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ImagenProducto.Image = ((System.Drawing.Image)(resources.GetObject("ImagenProducto.Image")));
+            this.ImagenProducto.Location = new System.Drawing.Point(0, 0);
             this.ImagenProducto.Name = "ImagenProducto";
-            this.ImagenProducto.Size = new System.Drawing.Size(100, 84);
+            this.ImagenProducto.Size = new System.Drawing.Size(100, 87);
+            this.ImagenProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImagenProducto.TabIndex = 0;
             this.ImagenProducto.TabStop = false;
             this.ImagenProducto.Click += new System.EventHandler(this.ImagenProducto_Click);
@@ -1147,9 +1171,9 @@
             this.Precio_producto30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto30.Location = new System.Drawing.Point(376, 508);
             this.Precio_producto30.Name = "Precio_producto30";
-            this.Precio_producto30.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto30.Size = new System.Drawing.Size(40, 18);
             this.Precio_producto30.TabIndex = 48;
-            this.Precio_producto30.Text = "$9.000";
+            this.Precio_producto30.Text = "9000";
             // 
             // Btn_Añadir30
             // 
@@ -1191,9 +1215,9 @@
             this.Precio_producto29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto29.Location = new System.Drawing.Point(124, 508);
             this.Precio_producto29.Name = "Precio_producto29";
-            this.Precio_producto29.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto29.Size = new System.Drawing.Size(40, 18);
             this.Precio_producto29.TabIndex = 44;
-            this.Precio_producto29.Text = "$6.000";
+            this.Precio_producto29.Text = "6000";
             // 
             // Btn_Añadir29
             // 
@@ -1235,9 +1259,9 @@
             this.Precio_producto28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto28.Location = new System.Drawing.Point(867, 219);
             this.Precio_producto28.Name = "Precio_producto28";
-            this.Precio_producto28.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto28.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto28.TabIndex = 40;
-            this.Precio_producto28.Text = "$16.000";
+            this.Precio_producto28.Text = "16000";
             // 
             // Btn_Añadir28
             // 
@@ -1269,9 +1293,9 @@
             this.Precio_producto27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto27.Location = new System.Drawing.Point(619, 219);
             this.Precio_producto27.Name = "Precio_producto27";
-            this.Precio_producto27.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto27.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto27.TabIndex = 37;
-            this.Precio_producto27.Text = "$28.000";
+            this.Precio_producto27.Text = "28000";
             // 
             // Btn_Añadir27
             // 
@@ -1303,9 +1327,9 @@
             this.Precio_producto26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto26.Location = new System.Drawing.Point(364, 219);
             this.Precio_producto26.Name = "Precio_producto26";
-            this.Precio_producto26.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto26.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto26.TabIndex = 34;
-            this.Precio_producto26.Text = "$16.200";
+            this.Precio_producto26.Text = "16200";
             // 
             // Btn_Añadir26
             // 
@@ -1338,9 +1362,9 @@
             this.Precio_producto25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto25.Location = new System.Drawing.Point(116, 219);
             this.Precio_producto25.Name = "Precio_producto25";
-            this.Precio_producto25.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto25.Size = new System.Drawing.Size(40, 18);
             this.Precio_producto25.TabIndex = 31;
-            this.Precio_producto25.Text = "$8.500";
+            this.Precio_producto25.Text = "8500";
             // 
             // Imagen_producto28
             // 
@@ -1412,9 +1436,9 @@
             this.Precio_producto24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto24.Location = new System.Drawing.Point(859, 508);
             this.Precio_producto24.Name = "Precio_producto24";
-            this.Precio_producto24.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto24.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto24.TabIndex = 56;
-            this.Precio_producto24.Text = "$13.500";
+            this.Precio_producto24.Text = "13500";
             // 
             // Btn_Añadir24
             // 
@@ -1456,9 +1480,9 @@
             this.Precio_producto23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto23.Location = new System.Drawing.Point(619, 508);
             this.Precio_producto23.Name = "Precio_producto23";
-            this.Precio_producto23.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto23.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto23.TabIndex = 52;
-            this.Precio_producto23.Text = "$20.000";
+            this.Precio_producto23.Text = "20000";
             // 
             // Btn_Añadir23
             // 
@@ -1500,9 +1524,9 @@
             this.Precio_producto22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto22.Location = new System.Drawing.Point(376, 508);
             this.Precio_producto22.Name = "Precio_producto22";
-            this.Precio_producto22.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto22.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto22.TabIndex = 48;
-            this.Precio_producto22.Text = "$18.000";
+            this.Precio_producto22.Text = "18000";
             // 
             // Btn_Añadir22
             // 
@@ -1544,9 +1568,9 @@
             this.Precio_producto21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto21.Location = new System.Drawing.Point(124, 508);
             this.Precio_producto21.Name = "Precio_producto21";
-            this.Precio_producto21.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto21.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto21.TabIndex = 44;
-            this.Precio_producto21.Text = "$33.000";
+            this.Precio_producto21.Text = "33000";
             // 
             // Btn_Añadir21
             // 
@@ -1588,9 +1612,9 @@
             this.Precio_producto20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto20.Location = new System.Drawing.Point(867, 219);
             this.Precio_producto20.Name = "Precio_producto20";
-            this.Precio_producto20.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto20.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto20.TabIndex = 40;
-            this.Precio_producto20.Text = "$74.000";
+            this.Precio_producto20.Text = "74000";
             // 
             // Btn_Añadir20
             // 
@@ -1622,9 +1646,9 @@
             this.Precio_producto19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto19.Location = new System.Drawing.Point(619, 219);
             this.Precio_producto19.Name = "Precio_producto19";
-            this.Precio_producto19.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto19.Size = new System.Drawing.Size(40, 18);
             this.Precio_producto19.TabIndex = 37;
-            this.Precio_producto19.Text = "$8.000";
+            this.Precio_producto19.Text = "8000";
             // 
             // Btn_Añadir19
             // 
@@ -1656,9 +1680,9 @@
             this.Precio_producto18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto18.Location = new System.Drawing.Point(364, 219);
             this.Precio_producto18.Name = "Precio_producto18";
-            this.Precio_producto18.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto18.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto18.TabIndex = 34;
-            this.Precio_producto18.Text = "$24.000";
+            this.Precio_producto18.Text = "24000";
             // 
             // Btn_Añadir18
             // 
@@ -1691,9 +1715,9 @@
             this.Precio_producto17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto17.Location = new System.Drawing.Point(116, 219);
             this.Precio_producto17.Name = "Precio_producto17";
-            this.Precio_producto17.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto17.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto17.TabIndex = 31;
-            this.Precio_producto17.Text = "$10.000";
+            this.Precio_producto17.Text = "10000";
             // 
             // Imagen_producto20
             // 
@@ -1765,9 +1789,9 @@
             this.Precio_producto16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto16.Location = new System.Drawing.Point(859, 508);
             this.Precio_producto16.Name = "Precio_producto16";
-            this.Precio_producto16.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto16.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto16.TabIndex = 56;
-            this.Precio_producto16.Text = "$18.500";
+            this.Precio_producto16.Text = "18500";
             // 
             // Btn_Añadir16
             // 
@@ -1809,9 +1833,9 @@
             this.Precio_producto15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto15.Location = new System.Drawing.Point(619, 508);
             this.Precio_producto15.Name = "Precio_producto15";
-            this.Precio_producto15.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto15.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto15.TabIndex = 52;
-            this.Precio_producto15.Text = "$10.000";
+            this.Precio_producto15.Text = "10000";
             // 
             // Btn_Añadir15
             // 
@@ -1853,9 +1877,9 @@
             this.Precio_producto14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto14.Location = new System.Drawing.Point(376, 508);
             this.Precio_producto14.Name = "Precio_producto14";
-            this.Precio_producto14.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto14.Size = new System.Drawing.Size(40, 18);
             this.Precio_producto14.TabIndex = 48;
-            this.Precio_producto14.Text = "$8.000";
+            this.Precio_producto14.Text = "8000";
             // 
             // Btn_Añadir14
             // 
@@ -1897,9 +1921,9 @@
             this.Precio_producto13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto13.Location = new System.Drawing.Point(124, 508);
             this.Precio_producto13.Name = "Precio_producto13";
-            this.Precio_producto13.Size = new System.Drawing.Size(52, 18);
+            this.Precio_producto13.Size = new System.Drawing.Size(40, 18);
             this.Precio_producto13.TabIndex = 44;
-            this.Precio_producto13.Text = "$7.000";
+            this.Precio_producto13.Text = "7000";
             // 
             // Btn_Añadir13
             // 
@@ -1941,9 +1965,9 @@
             this.Precio_producto12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto12.Location = new System.Drawing.Point(867, 219);
             this.Precio_producto12.Name = "Precio_producto12";
-            this.Precio_producto12.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto12.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto12.TabIndex = 40;
-            this.Precio_producto12.Text = "$14.000";
+            this.Precio_producto12.Text = "14000";
             // 
             // Btn_Añadir12
             // 
@@ -1975,9 +1999,9 @@
             this.Precio_producto11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto11.Location = new System.Drawing.Point(619, 219);
             this.Precio_producto11.Name = "Precio_producto11";
-            this.Precio_producto11.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto11.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto11.TabIndex = 37;
-            this.Precio_producto11.Text = "$13.000";
+            this.Precio_producto11.Text = "13000";
             // 
             // Btn_Añadir11
             // 
@@ -2009,9 +2033,9 @@
             this.Precio_producto10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto10.Location = new System.Drawing.Point(364, 219);
             this.Precio_producto10.Name = "Precio_producto10";
-            this.Precio_producto10.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto10.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto10.TabIndex = 34;
-            this.Precio_producto10.Text = "$42.000";
+            this.Precio_producto10.Text = "42000";
             // 
             // Btn_Añadir10
             // 
@@ -2044,9 +2068,9 @@
             this.Precio_producto9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_producto9.Location = new System.Drawing.Point(116, 219);
             this.Precio_producto9.Name = "Precio_producto9";
-            this.Precio_producto9.Size = new System.Drawing.Size(60, 18);
+            this.Precio_producto9.Size = new System.Drawing.Size(48, 18);
             this.Precio_producto9.TabIndex = 31;
-            this.Precio_producto9.Text = "$12.000";
+            this.Precio_producto9.Text = "12000";
             // 
             // Imagen_producto12
             // 
@@ -2118,9 +2142,9 @@
             this.Precio_Producto8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_Producto8.Location = new System.Drawing.Point(859, 508);
             this.Precio_Producto8.Name = "Precio_Producto8";
-            this.Precio_Producto8.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto8.Size = new System.Drawing.Size(48, 18);
             this.Precio_Producto8.TabIndex = 56;
-            this.Precio_Producto8.Text = "$14.500";
+            this.Precio_Producto8.Text = "14500";
             // 
             // Btn_Añadir8
             // 
@@ -2162,9 +2186,9 @@
             this.Precio_Producto7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_Producto7.Location = new System.Drawing.Point(619, 508);
             this.Precio_Producto7.Name = "Precio_Producto7";
-            this.Precio_Producto7.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto7.Size = new System.Drawing.Size(48, 18);
             this.Precio_Producto7.TabIndex = 52;
-            this.Precio_Producto7.Text = "$10.000";
+            this.Precio_Producto7.Text = "10000";
             // 
             // Btn_Añadir7
             // 
@@ -2206,9 +2230,9 @@
             this.Precio_Producto6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_Producto6.Location = new System.Drawing.Point(376, 508);
             this.Precio_Producto6.Name = "Precio_Producto6";
-            this.Precio_Producto6.Size = new System.Drawing.Size(52, 18);
+            this.Precio_Producto6.Size = new System.Drawing.Size(40, 18);
             this.Precio_Producto6.TabIndex = 48;
-            this.Precio_Producto6.Text = "$4.000";
+            this.Precio_Producto6.Text = "4000";
             // 
             // Btn_Añadir6
             // 
@@ -2250,9 +2274,9 @@
             this.Precio_Producto5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_Producto5.Location = new System.Drawing.Point(124, 508);
             this.Precio_Producto5.Name = "Precio_Producto5";
-            this.Precio_Producto5.Size = new System.Drawing.Size(52, 18);
+            this.Precio_Producto5.Size = new System.Drawing.Size(40, 18);
             this.Precio_Producto5.TabIndex = 44;
-            this.Precio_Producto5.Text = "$9.000";
+            this.Precio_Producto5.Text = "9000";
             // 
             // Btn_Añadir5
             // 
@@ -2294,9 +2318,9 @@
             this.Precio_Producto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_Producto4.Location = new System.Drawing.Point(867, 219);
             this.Precio_Producto4.Name = "Precio_Producto4";
-            this.Precio_Producto4.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto4.Size = new System.Drawing.Size(48, 18);
             this.Precio_Producto4.TabIndex = 40;
-            this.Precio_Producto4.Text = "$12.000";
+            this.Precio_Producto4.Text = "12000";
             // 
             // Btn_Añadir4
             // 
@@ -2328,9 +2352,9 @@
             this.Precio_Producto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_Producto3.Location = new System.Drawing.Point(619, 219);
             this.Precio_Producto3.Name = "Precio_Producto3";
-            this.Precio_Producto3.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto3.Size = new System.Drawing.Size(48, 18);
             this.Precio_Producto3.TabIndex = 37;
-            this.Precio_Producto3.Text = "$25.000";
+            this.Precio_Producto3.Text = "25000";
             // 
             // Btn_Añadir3
             // 
@@ -2362,9 +2386,9 @@
             this.Precio_Producto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_Producto2.Location = new System.Drawing.Point(364, 219);
             this.Precio_Producto2.Name = "Precio_Producto2";
-            this.Precio_Producto2.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto2.Size = new System.Drawing.Size(48, 18);
             this.Precio_Producto2.TabIndex = 34;
-            this.Precio_Producto2.Text = "$35.000";
+            this.Precio_Producto2.Text = "35000";
             // 
             // Btn_Añadir2
             // 
@@ -2396,9 +2420,9 @@
             this.Precio_Producto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_Producto1.Location = new System.Drawing.Point(116, 219);
             this.Precio_Producto1.Name = "Precio_Producto1";
-            this.Precio_Producto1.Size = new System.Drawing.Size(60, 18);
+            this.Precio_Producto1.Size = new System.Drawing.Size(48, 18);
             this.Precio_Producto1.TabIndex = 31;
-            this.Precio_Producto1.Text = "$18.000";
+            this.Precio_Producto1.Text = "18000";
             // 
             // Imagen_producto4
             // 
@@ -2467,6 +2491,26 @@
             this.Pnl_SigAnt.Size = new System.Drawing.Size(1043, 57);
             this.Pnl_SigAnt.TabIndex = 58;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(451, 365);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 33);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Total a Pagar";
+            // 
+            // Lbl_Total
+            // 
+            this.Lbl_Total.AutoSize = true;
+            this.Lbl_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Total.Location = new System.Drawing.Point(522, 408);
+            this.Lbl_Total.Name = "Lbl_Total";
+            this.Lbl_Total.Size = new System.Drawing.Size(31, 33);
+            this.Lbl_Total.TabIndex = 10;
+            this.Lbl_Total.Text = "0";
+            // 
             // FormInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2523,6 +2567,7 @@
             this.Pnl_Pagina4.ResumeLayout(false);
             this.Pnl_Pagina4.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.Celda5.ResumeLayout(false);
             this.Celda5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImagenProducto5)).EndInit();
@@ -2745,20 +2790,22 @@
         private System.Windows.Forms.Label ProductoN1;
         private System.Windows.Forms.Label PrecioProducto1;
         private System.Windows.Forms.PictureBox ImagenProducto;
-        private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button btn_x5;
+        private System.Windows.Forms.Button btn_x4;
+        private System.Windows.Forms.Button btn_x2;
+        private System.Windows.Forms.Button btn_x1;
         private System.Windows.Forms.Button btnCarrito2;
         private System.Windows.Forms.Label lbl_Estado5;
         private System.Windows.Forms.Label lbl_Estado4;
         private System.Windows.Forms.Panel Celda3;
         private System.Windows.Forms.Label lbl_Estado3;
-        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button btn_x3;
         private System.Windows.Forms.Label ProductoN3;
         private System.Windows.Forms.Label PrecioProducto3;
         private System.Windows.Forms.PictureBox ImagenProducto3;
         private System.Windows.Forms.Label lbl_Estado2;
         private System.Windows.Forms.Label lbl_Estado1;
+        private System.Windows.Forms.Label Lbl_Total;
+        private System.Windows.Forms.Label label1;
     }
 }

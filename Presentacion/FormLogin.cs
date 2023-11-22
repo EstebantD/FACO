@@ -35,11 +35,21 @@ namespace Presentacion
 
         private void Btn_Ingresar_Click(object sender, EventArgs e)
         {
+            FormGerencia gerencia = new FormGerencia();
             FormInicio inicio = new FormInicio();
             login.Usuario = txtUsuario.Text;
             login.Contraseña = txtContraseña.Text;
             Label nombre = inicio.EnviarNombre();
-            servicio_Ciente.IniciarSesion(inicio, login,nombre);
+            //Aquí puedo cambiar el usuario y la contraseña de administrador 
+            if (txtUsuario.Text=="admin" && txtContraseña.Text=="admin")
+            {
+                gerencia.Show();
+                this.Hide();
+            }
+            else
+            {
+                servicio_Ciente.IniciarSesion(inicio, login, nombre);
+            }
         }
     }
 }

@@ -23,7 +23,6 @@ namespace Datos
         public void Open()
         {
             conexion.Open();
-
         }
         //Cierra la conexion con la base de datos//
         public void Closed()

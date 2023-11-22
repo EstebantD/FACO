@@ -18,7 +18,7 @@ namespace Datos
             using (var Comando = conexion.CreateCommand())
             {
                 Comando.CommandText = "Insert into Login(Documento,Nombre_Completo,Fecha_Nacimiento,Usuario,Contraseña,Telefono) values (@Documento,@Nombre_Completo,@Fecha_Nacimiento,@Usuario,@Contraseña,@Telefono)";
-                Comando.Parameters.Add("@Documento", SqlDbType.Int).Value = login.Documento;
+                Comando.Parameters.Add("@Documento", SqlDbType.VarChar).Value = login.Documento;
                 Comando.Parameters.Add("@Nombre_Completo", SqlDbType.VarChar).Value = login.Nombre_Completo;
                 Comando.Parameters.Add("@Fecha_Nacimiento", SqlDbType.DateTime).Value = login.Fecha_Nacimineto;
                 Comando.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = login.Usuario;
@@ -34,7 +34,7 @@ namespace Datos
         {
             if (!dataReader.HasRows) return null;
             Login clienteLog = new Login();
-            clienteLog.Documento = dataReader.GetInt32(0);
+            clienteLog.Documento = dataReader.GetString(0);
             clienteLog.Nombre_Completo = dataReader.GetString(1);
             clienteLog.Fecha_Nacimineto = dataReader.GetDateTime(2);
             clienteLog.Usuario = dataReader.GetString(3);
