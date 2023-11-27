@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -12,14 +13,14 @@ namespace Logica
 {
     public class ServicioProducto 
     {
-        Datos.RepositorioProductos RepositorioProductos;
+        Datos.RepositorioProductos repositorioProductos;
         public ServicioProducto(string connectionString)
         {
-            RepositorioProductos = new Datos.RepositorioProductos(connectionString);
+            repositorioProductos = new Datos.RepositorioProductos(connectionString);
         }
         public void Insertar(Productos productos)
         {
-            RepositorioProductos.Insert(productos);
+            repositorioProductos.Insert(productos);
         }
 
         public void Cerrar_Celda(Label nombre_producto, Label precio_producto, PictureBox imagen_producto, Panel celda, Label nombre_celda, Label precio_celda, PictureBox imagen_celda, Label estado_celda1, Label estado_celda2, Label estado_celda3, Label estado_celda4, Label estado_celda5)
@@ -57,29 +58,13 @@ namespace Logica
         }
         public int ObtenerTotal(int producto1, int producto2, int producto3, int producto4, int producto5)
         {
-            //if (producto1==0)
-            //{
-
-            //}
-            //if (producto2 == 0)
-            //{
-
-            //}
-            //if (producto3 == 0)
-            //{
-
-            //}
-            //if (producto4 == 0)
-            //{
-
-            //}
-            //if (producto5 == 0)
-            //{
-
-            //}
             int Total=0;
             Total = producto1 + producto2 + producto3 + producto4 + producto5;
             return Total;          
+        }
+        public DataTable GetClientes()
+        {
+            return repositorioProductos.GetAllTabla();
         }
     }
 }

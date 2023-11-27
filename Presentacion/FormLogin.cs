@@ -40,6 +40,7 @@ namespace Presentacion
             login.Usuario = txtUsuario.Text;
             login.Contraseña = txtContraseña.Text;
             Label nombre = inicio.EnviarNombre();
+            Label documento = inicio.Documento();
             //Aquí puedo cambiar el usuario y la contraseña de administrador 
             if (txtUsuario.Text=="admin" && txtContraseña.Text=="admin")
             {
@@ -48,7 +49,10 @@ namespace Presentacion
             }
             else
             {
-                servicio_Ciente.IniciarSesion(inicio, login, nombre);
+                if(servicio_Ciente.IniciarSesion(inicio, login, nombre, documento) == true)
+                {
+                    this.Hide();
+                }
             }
         }
     }

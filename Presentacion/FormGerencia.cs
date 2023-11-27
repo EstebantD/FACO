@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Presentacion
 {
     public partial class FormGerencia : Form
     {
+        Servicio_Ciente servicio_Ciente = new Servicio_Ciente(ConfigConnection.ConnectionString);
+        ServicioFinanzas servicio_finanzas = new ServicioFinanzas(ConfigConnection.ConnectionString);
+        ServicioProducto servicio_producto = new ServicioProducto(ConfigConnection.ConnectionString);
         public FormGerencia()
         {
             InitializeComponent();
+            Cargar_Tabla();
+            Contadores();
         }
 
         private void Btn_Salir_Click(object sender, EventArgs e)
@@ -24,66 +31,39 @@ namespace Presentacion
             fl.Show();
         }
         private void Cargar_Tabla()
-        {
-
+        {          
+            Dtv_Clientes.DataSource = servicio_Ciente.GetClientes();
+            Dtv_Finanzas.DataSource = servicio_finanzas.GetFinanzas();
+            //Dtv_ComprasRealizadas.DataSource = servicio_Finanzas();
         }
-        private void Cargar_Contadores()
+        public void Imprimir()
         {
-
+            
+        }
+        public void Contadores()
+        {
+            Lbl_Total_Ingresos.Text = servicio_finanzas.Total_Ingresos();
         }
 
         private void Btn_Clientes_Click(object sender, EventArgs e)
-        {
-            Abrir_PanelesGerencia(Pnl_Clientes,true,Pnl_Inventario,false,Pnl_Finanzas,false);
-        }
-
-        private void Btn_Inventario_Click(object sender, EventArgs e)
-        {
-            Abrir_PanelesGerencia(Pnl_Clientes, false, Pnl_Inventario, true, Pnl_Finanzas, false);
+        { 
+            Pnl_Finanzas.Visible = false;
         }
 
         private void Btn_Finanzas_Click(object sender, EventArgs e)
         {
-            Abrir_PanelesGerencia(Pnl_Clientes, false, Pnl_Inventario, false, Pnl_Finanzas, true);
-
+            Pnl_Finanzas.Visible = true;
         }
-        private void Abrir_PanelesGerencia(Panel clientes,bool clickc,Panel inventario,bool clicki,Panel finanzas,bool clickf)
+
+        private void Dtv_Clientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(clientes.Visible==true && inventario.Visible==false && finanzas.Visible==false)
-            {
-                if(clicki == true)
-                {
-                    inventario.Visible = true;
-                }
-                else if(clickf == true)
-                {
-                    inventario.Visible = true;
-                    inventario.Visible=true;
-                }
-            }
-            else if (clientes.Visible == true && inventario.Visible == true && finanzas.Visible == false)
-            {
-                if (clickc == true)
-                {
-                    inventario.Visible = false;
-                }
-                else if (clickf == true)
-                {
-                    finanzas.Visible = true;
-                }
-            }
-            else if (clientes.Visible == true && inventario.Visible == true && finanzas.Visible == true)
-            {
-                if (clickc == true)
-                {
-                    finanzas.Visible=false;
-                    inventario.Visible=false;
-                }
-                else if (clicki == true)
-                {
-                    finanzas.Visible = false;
-                }
-            }
+            servicio_Ciente.Buscar_Tablas(Txt_ID, Dtv_Clientes, "Documento", e);
+            Dtv_ComprasRealizadas.DataSource = servicio_finanzas.GetAllProductos_Cliente(Txt_ID.Text);
+        }
+
+        private void Btn_GenerarPDF_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

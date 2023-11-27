@@ -32,9 +32,10 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_Documento = new System.Windows.Forms.Label();
             this.btnCarrito2 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.Btn_Salir = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCarrito1 = new System.Windows.Forms.Button();
             this.Imagen_producto1 = new System.Windows.Forms.PictureBox();
@@ -64,10 +65,11 @@
             this.Pnl_Pagina3 = new System.Windows.Forms.Panel();
             this.Pnl_Pagina4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Celda5 = new System.Windows.Forms.Panel();
+            this.Lbl_Total = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lbl_Estado5 = new System.Windows.Forms.Label();
+            this.Celda5 = new System.Windows.Forms.Panel();
             this.btn_x5 = new System.Windows.Forms.Button();
-            this.Btn_Comprar = new System.Windows.Forms.Button();
             this.ProductoN5 = new System.Windows.Forms.Label();
             this.PrecioProducto5 = new System.Windows.Forms.Label();
             this.ImagenProducto5 = new System.Windows.Forms.PictureBox();
@@ -77,6 +79,7 @@
             this.ProductoN4 = new System.Windows.Forms.Label();
             this.PrecioProducto4 = new System.Windows.Forms.Label();
             this.ImagenProducto4 = new System.Windows.Forms.PictureBox();
+            this.Btn_Comprar = new System.Windows.Forms.Button();
             this.Celda3 = new System.Windows.Forms.Panel();
             this.lbl_Estado3 = new System.Windows.Forms.Label();
             this.btn_x3 = new System.Windows.Forms.Button();
@@ -216,8 +219,7 @@
             this.Btn_Siguiente = new System.Windows.Forms.Button();
             this.Btn_Anterior = new System.Windows.Forms.Button();
             this.Pnl_SigAnt = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Lbl_Total = new System.Windows.Forms.Label();
+            this.Btn_Salir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen_producto1)).BeginInit();
@@ -284,7 +286,7 @@
             this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.Black;
-            this.lblNombre.Location = new System.Drawing.Point(228, 9);
+            this.lblNombre.Location = new System.Drawing.Point(226, 34);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(76, 20);
@@ -297,7 +299,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(162, 9);
+            this.label2.Location = new System.Drawing.Point(162, 34);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 20);
@@ -307,6 +309,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.lbl_Documento);
             this.panel1.Controls.Add(this.btnCarrito2);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.Btn_Salir);
@@ -319,6 +323,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1043, 84);
             this.panel1.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(162, 9);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 20);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "N°Documento:";
+            // 
+            // lbl_Documento
+            // 
+            this.lbl_Documento.AutoSize = true;
+            this.lbl_Documento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbl_Documento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Documento.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Documento.Location = new System.Drawing.Point(271, 9);
+            this.lbl_Documento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Documento.Name = "lbl_Documento";
+            this.lbl_Documento.Size = new System.Drawing.Size(112, 20);
+            this.lbl_Documento.TabIndex = 13;
+            this.lbl_Documento.Text = "N_Documento";
             // 
             // btnCarrito2
             // 
@@ -346,19 +376,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 11;
             this.pictureBox5.TabStop = false;
-            // 
-            // Btn_Salir
-            // 
-            this.Btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Btn_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.BackgroundImage")));
-            this.Btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Salir.Location = new System.Drawing.Point(947, 16);
-            this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(75, 57);
-            this.Btn_Salir.TabIndex = 8;
-            this.Btn_Salir.UseVisualStyleBackColor = false;
-            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
             // label3
             // 
@@ -801,17 +818,25 @@
             this.panel2.TabIndex = 50;
             this.panel2.Visible = false;
             // 
-            // Celda5
+            // Lbl_Total
             // 
-            this.Celda5.Controls.Add(this.btn_x5);
-            this.Celda5.Controls.Add(this.ProductoN5);
-            this.Celda5.Controls.Add(this.PrecioProducto5);
-            this.Celda5.Controls.Add(this.ImagenProducto5);
-            this.Celda5.Location = new System.Drawing.Point(0, 360);
-            this.Celda5.Name = "Celda5";
-            this.Celda5.Size = new System.Drawing.Size(420, 87);
-            this.Celda5.TabIndex = 5;
-            this.Celda5.Visible = false;
+            this.Lbl_Total.AutoSize = true;
+            this.Lbl_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Total.Location = new System.Drawing.Point(522, 408);
+            this.Lbl_Total.Name = "Lbl_Total";
+            this.Lbl_Total.Size = new System.Drawing.Size(31, 33);
+            this.Lbl_Total.TabIndex = 10;
+            this.Lbl_Total.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(451, 365);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 33);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Total a Pagar";
             // 
             // lbl_Estado5
             // 
@@ -823,6 +848,18 @@
             this.lbl_Estado5.TabIndex = 8;
             this.lbl_Estado5.Text = "Disponible";
             this.lbl_Estado5.Visible = false;
+            // 
+            // Celda5
+            // 
+            this.Celda5.Controls.Add(this.btn_x5);
+            this.Celda5.Controls.Add(this.ProductoN5);
+            this.Celda5.Controls.Add(this.PrecioProducto5);
+            this.Celda5.Controls.Add(this.ImagenProducto5);
+            this.Celda5.Location = new System.Drawing.Point(0, 360);
+            this.Celda5.Name = "Celda5";
+            this.Celda5.Size = new System.Drawing.Size(420, 87);
+            this.Celda5.TabIndex = 5;
+            this.Celda5.Visible = false;
             // 
             // btn_x5
             // 
@@ -836,18 +873,6 @@
             this.btn_x5.Text = "x";
             this.btn_x5.UseVisualStyleBackColor = false;
             this.btn_x5.Click += new System.EventHandler(this.btn_x5_Click);
-            // 
-            // Btn_Comprar
-            // 
-            this.Btn_Comprar.BackColor = System.Drawing.Color.LimeGreen;
-            this.Btn_Comprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Comprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Comprar.Location = new System.Drawing.Point(713, 388);
-            this.Btn_Comprar.Name = "Btn_Comprar";
-            this.Btn_Comprar.Size = new System.Drawing.Size(98, 61);
-            this.Btn_Comprar.TabIndex = 3;
-            this.Btn_Comprar.Text = "Comprar";
-            this.Btn_Comprar.UseVisualStyleBackColor = false;
             // 
             // ProductoN5
             // 
@@ -947,6 +972,19 @@
             this.ImagenProducto4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImagenProducto4.TabIndex = 0;
             this.ImagenProducto4.TabStop = false;
+            // 
+            // Btn_Comprar
+            // 
+            this.Btn_Comprar.BackColor = System.Drawing.Color.LimeGreen;
+            this.Btn_Comprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Comprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Comprar.Location = new System.Drawing.Point(713, 388);
+            this.Btn_Comprar.Name = "Btn_Comprar";
+            this.Btn_Comprar.Size = new System.Drawing.Size(98, 61);
+            this.Btn_Comprar.TabIndex = 3;
+            this.Btn_Comprar.Text = "Comprar";
+            this.Btn_Comprar.UseVisualStyleBackColor = false;
+            this.Btn_Comprar.Click += new System.EventHandler(this.Btn_Comprar_Click);
             // 
             // Celda3
             // 
@@ -2491,25 +2529,18 @@
             this.Pnl_SigAnt.Size = new System.Drawing.Size(1043, 57);
             this.Pnl_SigAnt.TabIndex = 58;
             // 
-            // label1
+            // Btn_Salir
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(451, 365);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 33);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Total a Pagar";
-            // 
-            // Lbl_Total
-            // 
-            this.Lbl_Total.AutoSize = true;
-            this.Lbl_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Total.Location = new System.Drawing.Point(522, 408);
-            this.Lbl_Total.Name = "Lbl_Total";
-            this.Lbl_Total.Size = new System.Drawing.Size(31, 33);
-            this.Lbl_Total.TabIndex = 10;
-            this.Lbl_Total.Text = "0";
+            this.Btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Btn_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.BackgroundImage")));
+            this.Btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Salir.Location = new System.Drawing.Point(947, 16);
+            this.Btn_Salir.Name = "Btn_Salir";
+            this.Btn_Salir.Size = new System.Drawing.Size(75, 57);
+            this.Btn_Salir.TabIndex = 8;
+            this.Btn_Salir.UseVisualStyleBackColor = false;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
             // FormInicio
             // 
@@ -2621,7 +2652,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Btn_Salir;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCarrito1;
@@ -2807,5 +2837,8 @@
         private System.Windows.Forms.Label lbl_Estado1;
         private System.Windows.Forms.Label Lbl_Total;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_Documento;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button Btn_Salir;
     }
 }

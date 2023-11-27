@@ -58,5 +58,19 @@ namespace Datos
             Closed();
             return log;
         }
+        public DataTable GetAllTabla()
+        {
+            Open();
+            SqlCommand comando = conexion.CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SELECT * FROM LOGIN";
+            comando.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(comando);
+            dataAdapter.Fill(dt);
+            Closed();
+            return dt;
+        }
     }
 }
