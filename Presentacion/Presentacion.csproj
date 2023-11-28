@@ -48,6 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigConnection.cs" />
+    <Compile Include="DBFACODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBFACODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBFACODataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBFACODataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormGerencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +105,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DBFACODataSet.xsc">
+      <DependentUpon>DBFACODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBFACODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBFACODataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBFACODataSet.xss">
+      <DependentUpon>DBFACODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBFACODataSet1.xsc">
+      <DependentUpon>DBFACODataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBFACODataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBFACODataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBFACODataSet1.xss">
+      <DependentUpon>DBFACODataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

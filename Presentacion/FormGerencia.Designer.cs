@@ -47,7 +47,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.Pnl_Clientes = new System.Windows.Forms.Panel();
-            this.Btn_GenerarPDF = new System.Windows.Forms.Button();
             this.Pnl_Finanzas = new System.Windows.Forms.Panel();
             this.Lbl_Total_Ingresos = new System.Windows.Forms.Label();
             this.Lbl_Total_Clien = new System.Windows.Forms.Label();
@@ -55,7 +54,6 @@
             this.Lbl_Total_Clientes = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Dtv_Clientes = new System.Windows.Forms.DataGridView();
-            this.Btn_Borrar = new System.Windows.Forms.Button();
             this.Dtv_ComprasRealizadas = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -262,30 +260,12 @@
             this.Pnl_Clientes.Controls.Add(this.Lbl_Total_Clientes);
             this.Pnl_Clientes.Controls.Add(this.label1);
             this.Pnl_Clientes.Controls.Add(this.Dtv_Clientes);
-            this.Pnl_Clientes.Controls.Add(this.Btn_Borrar);
             this.Pnl_Clientes.Controls.Add(this.Dtv_ComprasRealizadas);
             this.Pnl_Clientes.Controls.Add(this.label2);
-            this.Pnl_Clientes.Controls.Add(this.Btn_GenerarPDF);
             this.Pnl_Clientes.Location = new System.Drawing.Point(173, 75);
             this.Pnl_Clientes.Name = "Pnl_Clientes";
             this.Pnl_Clientes.Size = new System.Drawing.Size(786, 583);
             this.Pnl_Clientes.TabIndex = 3;
-            // 
-            // Btn_GenerarPDF
-            // 
-            this.Btn_GenerarPDF.BackColor = System.Drawing.Color.LightGray;
-            this.Btn_GenerarPDF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_GenerarPDF.BackgroundImage")));
-            this.Btn_GenerarPDF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btn_GenerarPDF.FlatAppearance.BorderSize = 0;
-            this.Btn_GenerarPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_GenerarPDF.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_GenerarPDF.ForeColor = System.Drawing.Color.White;
-            this.Btn_GenerarPDF.Location = new System.Drawing.Point(8, 483);
-            this.Btn_GenerarPDF.Name = "Btn_GenerarPDF";
-            this.Btn_GenerarPDF.Size = new System.Drawing.Size(101, 91);
-            this.Btn_GenerarPDF.TabIndex = 18;
-            this.Btn_GenerarPDF.UseVisualStyleBackColor = false;
-            this.Btn_GenerarPDF.Click += new System.EventHandler(this.Btn_GenerarPDF_Click);
             // 
             // Pnl_Finanzas
             // 
@@ -320,7 +300,7 @@
             // Dtv_Finanzas
             // 
             this.Dtv_Finanzas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dtv_Finanzas.Location = new System.Drawing.Point(0, 107);
+            this.Dtv_Finanzas.Location = new System.Drawing.Point(0, 92);
             this.Dtv_Finanzas.Name = "Dtv_Finanzas";
             this.Dtv_Finanzas.Size = new System.Drawing.Size(785, 474);
             this.Dtv_Finanzas.TabIndex = 6;
@@ -353,18 +333,6 @@
             this.Dtv_Clientes.Size = new System.Drawing.Size(540, 273);
             this.Dtv_Clientes.TabIndex = 3;
             this.Dtv_Clientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dtv_Clientes_CellClick);
-            // 
-            // Btn_Borrar
-            // 
-            this.Btn_Borrar.BackColor = System.Drawing.Color.Black;
-            this.Btn_Borrar.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Borrar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Borrar.Location = new System.Drawing.Point(36, 186);
-            this.Btn_Borrar.Name = "Btn_Borrar";
-            this.Btn_Borrar.Size = new System.Drawing.Size(175, 53);
-            this.Btn_Borrar.TabIndex = 15;
-            this.Btn_Borrar.Text = "Borrar";
-            this.Btn_Borrar.UseVisualStyleBackColor = false;
             // 
             // Dtv_ComprasRealizadas
             // 
@@ -441,14 +409,12 @@
         private System.Windows.Forms.Label Lbl_Total_Clientes;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView Dtv_Clientes;
-        private System.Windows.Forms.Button Btn_Borrar;
         private System.Windows.Forms.DataGridView Dtv_ComprasRealizadas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel Pnl_Finanzas;
         private System.Windows.Forms.Label Lbl_Total_Ingresos;
         private System.Windows.Forms.Label Lbl_Total_Clien;
-        private System.Windows.Forms.DataGridView Dtv_Finanzas;
         private System.Windows.Forms.TextBox Txt_ID;
-        private System.Windows.Forms.Button Btn_GenerarPDF;
+        private System.Windows.Forms.DataGridView Dtv_Finanzas;
     }
 }

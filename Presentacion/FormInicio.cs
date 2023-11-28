@@ -17,6 +17,7 @@ namespace Presentacion
 {
     public partial class FormInicio : Form
     {
+        // Conectar los servisios con la capa lógica 
         ServicioProducto servicioProducto = new ServicioProducto(ConfigConnection.ConnectionString);
         ServicioFinanzas servicioFinanzas = new ServicioFinanzas(ConfigConnection.ConnectionString);
         Manejo_Formulario mj = new Manejo_Formulario();
@@ -41,6 +42,7 @@ namespace Presentacion
             return lbl_Documento;
         }
 
+        //Botones de atras y siguiente
         private void Btn_Siguiente_Click(object sender, EventArgs e)
         {
             mj.Btn_Siguiente(Pnl_Pagina2, Pnl_Pagina3, Pnl_Pagina4, Btn_Anterior, Btn_Siguiente);
@@ -70,6 +72,7 @@ namespace Presentacion
         {
         }
 
+        //Espacio que hay disponible en el carrito 
         private void button5_Click(object sender, EventArgs e)
         {
             Btn_Siguiente.Visible = false;
@@ -94,7 +97,7 @@ namespace Presentacion
             btnCarrito2.Visible = false;
             panel2.Visible = false;
         }
-
+        //Botones añadir al carrito 
         private void Btn_Añadir1_Click(object sender, EventArgs e)
         {
             Celdas_Disponibles(N_Producto1.Text, Precio_Producto1.Text, Imagen_producto1);
@@ -248,6 +251,7 @@ namespace Presentacion
         {
             Celdas_Disponibles(Nombre_producto30.Text, Precio_producto30.Text, Imagen_producto30);
         }
+        // Mira si hay una celda disponible añadir un producto al carrito
         public void Celdas_Disponibles(string nombre_producto, string precio_producto, PictureBox imagen_producto)
         {
             if (lbl_Estado1.Text == "Disponible")
@@ -275,6 +279,7 @@ namespace Presentacion
                 MessageBox.Show("Carrito Lleno");
             }
         }
+        //Muestra imagen, nombre y precio del producto 
         public void Detalles_Producto(string nombre_producto, string precio_producto, PictureBox imagen_producto, Panel celda, Label nombre_celda, Label precio_celda, PictureBox imagen_celda, Label estado_celda)
         {
             celda.Visible = true;
@@ -528,20 +533,5 @@ namespace Presentacion
             finanzas.Precio_Total = int.Parse(Lbl_Total.Text);
             servicioFinanzas.Insertar(finanzas);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-}
+}   
